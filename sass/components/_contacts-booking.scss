@@ -11,36 +11,66 @@
   }
 
   @media screen and (max-width: 480px) {
-    background-image: url(../images/background/mobile/contacts-bg@1x_sm.png);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.9),
+        rgba(47, 48, 58, 0.9)
+      ),
+      url(../images/background/desktop/med-prices.jpg);
     // background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/background/mobile/contacts-bg@2x_sm.png);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.9),
+          rgba(47, 48, 58, 0.9)
+        ),
+        url(../images/background/desktop/med-prices.jpg);
     }
   }
   // Tablet screen
   @media screen and (min-width: 481px) {
-    background-image: url(../images/background/tablet/contacts-bg@1x_md.png);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.9),
+        rgba(47, 48, 58, 0.9)
+      ),
+      url(../images/background/desktop/med-prices.jpg);
     // background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/background/tablet/contacts-bg-lg-@2x.png);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.9),
+          rgba(47, 48, 58, 0.9)
+        ),
+        url(../images/background/desktop/med-prices.jpg);
     }
   }
 
   // Desktop screen
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/background/desktop/contacts-bg-lg-@1x.png);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.9),
+        rgba(47, 48, 58, 0.9)
+      ),
+      url(../images/background/desktop/med-prices.jpg);
     margin-left: -1px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/background/desktop/contacts-bg-lg-@2x.png);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.9),
+          rgba(47, 48, 58, 0.9)
+        ),
+        url(../images/background/desktop/med-prices.jpg);
     }
   }
 }
