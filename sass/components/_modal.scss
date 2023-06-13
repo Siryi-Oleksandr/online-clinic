@@ -45,6 +45,10 @@
   top: -22px;
   right: -22px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -60,7 +64,6 @@
 }
 
 .btn-close__icon {
-    
   display: inline-flex;
   align-items: center;
   justify-content: center;

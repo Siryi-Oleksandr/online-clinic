@@ -2093,7 +2093,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .contacts__list {
-    width: 250px;
+    width: 300px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -2234,6 +2234,15 @@ body {
   position: absolute;
   top: -22px;
   right: -22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
