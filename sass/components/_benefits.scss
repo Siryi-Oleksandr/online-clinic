@@ -1,0 +1,12 @@
+// .benefits {}
+
+.benefits__flex {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+}

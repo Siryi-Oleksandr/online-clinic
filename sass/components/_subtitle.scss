@@ -1,0 +1,25 @@
+.subtitle {
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.subtitle--dark-theme {
+  @extend .subtitle;
+  color: $secondary-text-color;
+}
+
+.subtitle_benefits {
+  margin-bottom: 44px;
+
+  font-size: 18px;
+  line-height: calc(30 / 18);
+}

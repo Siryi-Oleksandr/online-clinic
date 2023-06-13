@@ -1,0 +1,51 @@
+.uppertitle {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $title-text-color;
+
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+
+    display: block;
+    margin-right: 20px;
+
+    background-color: $title-text-color;
+  }
+}
+
+.uppertitle--dark-theme {
+  @extend .uppertitle;
+
+  color: $secondary-text-color-0_6;
+
+  &::before {
+    background-color: $secondary-text-color-0_6;
+  }
+}
+
+.uppertitle--white {
+  @extend .uppertitle;
+
+  color: $white-text-color;
+
+  &::before {
+      background-color: $secondary-text-color-0_6;
+    }
+}
+
+.uppertitle--big-bottom {
+  @extend .uppertitle;
+
+  margin-bottom: 44px;
+  }
+

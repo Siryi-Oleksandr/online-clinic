@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "utils/variables", "utils/functions", "utils/mixins",
+  "./utils/placeholders";
+
+// 2. Vendors
+@import "vendors/normalize";
+
+// 3. Base stuff
+@import "./base/base", "./base/fonts", "./base/typography", "./base/helpers";
+
+// 4. Layout-related sections
+@import "layout/header", "./layout/logo", "./layout/nav", "./layout/contacts",
+  "layout/footer";
+
+// 5. Components
+@import "components/button", "./components/section", "./components/hero",
+  "./components/hero-group", "./components/social", "./components/uppertitle",
+  "./components/subtitle", "./components/slider",
+  "./components/slider-pagination", "./components/section-about",
+  "./components/section-title", "./components/price", "./components/price-group",
+  "./components/benefits", "./components/benefits-list",
+  "./components/benefits-group", "./components/section-team",
+  "./components/card-set", "./components/socials-team",
+  "./components/section-gallery", "./components/section-booking",
+  "./components/form-booking", "./components/contacts-booking",
+  "./components/modal", "./components/modal-form", "./components/mobile-menu";
+
+// 6. Page-specific styles
+@import "pages/home";
+
+// 7. Themes
+@import "themes/default";

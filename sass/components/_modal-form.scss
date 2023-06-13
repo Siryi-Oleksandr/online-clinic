@@ -1,0 +1,155 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.modal-form__title {
+  text-align: center;
+  font-size: 20px;
+}
+
+.modal-form__field {
+  position: relative;
+}
+
+.modal-form__input {
+  padding: 10px 40px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid $secondary-text-color;
+
+  &::placeholder {
+    font-size: 14px;
+    opacity: 0;
+  }
+  &:focus::placeholder {
+    opacity: 1;
+  }
+}
+
+.modal-form__label {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  transition: transform 500ms linear;
+
+  .modal-form__input:focus + &,
+  .modal-form__input:not(:placeholder-shown) + & {
+    transform: translate(-30px, -45px) rotate(360deg);
+    color: black;
+  }
+}
+
+.modal-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translatey(-50%);
+
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.modal-form__message {
+  padding: 10px 40px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid $secondary-text-color;
+
+  resize: none;
+
+  &::placeholder {
+    font-size: 14px;
+  }
+}
+
+.modal-form__textarea {
+  font-size: 16px;
+}
+
+// .modal-form__agreement {}
+
+.modal-form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal-form__icon-check {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.checkbox-unchecked {
+  opacity: 1;
+  fill: $noactive-text-color;
+}
+
+.checkbox-checked {
+  opacity: 0;
+
+  .modal-form__checkbox:checked + .modal-form__icon--check > & {
+    opacity: 1;
+  }
+}
+
+.modal-form__agreement-text {
+  user-select: none;
+  font-size: 16px;
+}
+
+.modal-form__link {
+  color: $link-text-color;
+}
+
+.icon-checked {
+  opacity: 0;
+  .modal-form__input:focus:not(:placeholder-shown) ~ .modal-form__icon > &,
+  .modal-form__input:not(:placeholder-shown) ~ .modal-form__icon > & {
+    opacity: 1;
+    fill: green;
+  }
+}
+
+.icon-checked--visible {
+  opacity: 1;
+  fill: orange;
+
+  .modal-form__input:focus:not(:placeholder-shown) ~ .modal-form__icon > &,
+  .modal-form__input:not(:placeholder-shown) ~ .modal-form__icon > & {
+    fill: green;
+  }
+}
+
+.icon-unchecked {
+  opacity: 1;
+  fill: orange;
+  .modal-form__input:focus:not(:placeholder-shown) ~ .modal-form__icon > &,
+  .modal-form__input:not(:placeholder-shown) ~ .modal-form__icon > & {
+    opacity: 0;
+  }
+}
+
+.button--center {
+  margin: 0 auto;
+  margin-top: 15px;
+}

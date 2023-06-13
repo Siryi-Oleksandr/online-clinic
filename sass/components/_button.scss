@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.button {
+  padding: auto;
+
+  display: block;
+  width: 160px;
+  min-height: 40px;
+
+  color: $white-text-color;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 1px solid $link-text-color;
+  border-radius: 20px;
+  transition: all 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(255, 108, 0);
+    box-shadow: -2px 1px 24px 6px rgba(255, 108, 0, 0.75);
+
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: rgb(255, 108, 0);
+    box-shadow: -2px 1px 24px 6px rgba(255, 108, 0, 0.5) inset;
+  }
+}
+
+.button--white-theme {
+  @extend .button;
+  color: $title-text-color;
+}

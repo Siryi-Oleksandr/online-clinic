@@ -1,0 +1,3948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Barbershop</title>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    /> -->
+
+<!-- slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- modern-normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+   
+     <!--
+       |============================
+       | Top line - navigation
+       |============================
+     -->
+    <header class="header">
+      <div class="container header__flex">
+        <a class="logo" href=""
+          > <svg class="logo-icon" width="69" height="56">
+          <use href="./images/svg-sprite.svg#logo"></use>
+          </svg> </a>
+        
+          <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#prices">Services and prices</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#team">Barbers</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <a class="header-contacts__tel" href="tel:+380441111111">
+           <span>+38 044 111 11 11</span>
+            </a>
+           <button class="button" type="button" data-modal-open>Online-booking</button>
+        </div>
+        
+<button class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button" >
+        <svg width="40" height="40">
+        <use href="./images/svg-sprite.svg#menu-40px"></use>
+        </svg>
+      </button>
+      </div>
+      
+    </header>
+
+    <!--
+      |============================
+      | Mobile menu
+      |============================
+    -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-btn menu-btn--close js-close-menu" type="button">
+            <svg width="40" height="40">
+        <use href="./images/svg-sprite.svg#close-40px"></use>
+        </svg>
+          </button>
+          <nav class="mobile-menu">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#prices">Services and prices</a>
+            </li>
+            <li class="mobile-menu__item"><a class="nav__link" href="#team">Barbers</a></li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-contacts">
+          <a class="mobile-menu-contacts__tel" href="tel:+380441111111">
+           <span>+38 044 111 11 11</span>
+            </a>
+           <button class="button button--white-theme" type="button" data-modal-open>Online-booking</button>
+           
+        </div>
+        <ul class="social-list social-list--mobile">
+            <li class="social-list__item social-list__item--mobile">
+              <a
+                class="social-list__link social-list__link--mobile"
+                href="https://Instagram.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Instagram</a
+              >
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link social-list__link--mobile"
+                href="https://Youtube.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+    
+      <!--
+        |============================
+        | HERO
+        |============================
+      -->
+
+      <section class="section-hero">
+        <div class="container flex-side">
+          <div class="hero-left-side">
+            <ul class="social-list  social-list--vertical">
+            <li class="social-list__item">
+              <a
+                class="social-list__link"
+                href="https://Instagram.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Instagram</a>
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link"
+                href="https://Youtube.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+          </div>
+          <div class="hero-right-side">
+            <div class="hero-group">
+              <p class="uppertitle uppertitle--dark-theme">A hair salon for men in Kyiv</p>
+              <h1 class="hero-group__title">BarberShop</h1>
+              <p class="subtitle subtitle--dark-theme">
+                We are experts in trendy men’s haircuts. <br />
+                We work quickly, carefully and with style.
+              </p>
+          </div>
+
+          <ul class="slider">
+            <li class="slider__item">
+              <button class="slider__btn slider__btn--disabled" type="button">Back</button>
+            </li>
+            <li class="slider__item">
+              <button class="slider__btn" type="button">Forward</button>
+            </li>
+          </ul>
+          <ul class="slider-pagination">
+            <li class="slider-pagination__item slider-pagination__item--active"></li>
+            <li class="slider-pagination__item"></li>
+            <li class="slider-pagination__item"></li>
+          </ul>
+          </div>
+        </div>
+      </section>
+
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+    <iframe src="https://app.medfile.pl/register/catalog/?uuid=d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a" width="100%" height="4587px" style="border: 0px; width: 100%; transition: all 0.3s linear 0s;">
+    <html lang="pl"><head>
+    <meta charset="utf-8">
+    <title>Medfile - EDM - Elektroniczna dokumentacja medyczna</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0; user-scalable=0;">
+    <meta name="author" content="Medfile">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="/favicon.ico?time=479">
+    <link href="/assets/css/bootstrap.css?v=479" rel="stylesheet">
+    <link href="/assets/css/style.css?v=479" rel="stylesheet">
+
+    
+    <link href="/assets/css/responsive.css?v=479" rel="stylesheet">
+    <link href="/assets/css/responsive_992_1199.css?t=479" rel="stylesheet">
+    <link href="/assets/css/responsive_767_991.css?t=479" rel="stylesheet">
+    <link href="/assets/css/bootstrap-datetimepicker.min.css?t=479" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/fontawesome-pro-5.8.1/css/all.css?t=479" crossorigin="anonymous">
+
+    <link href="/assets/css/jquery-ui.min.css?t=479" rel="stylesheet">
+    <link href="/assets/css/jquery-ui.structure.min.css?t=479" rel="stylesheet">
+    <link href="/assets/css/jquery-ui.theme.min.css?t=479" rel="stylesheet">
+    <link href="/assets/css/select2.min.css?t=479" rel="stylesheet">
+    <link href="/assets/js/nouislider/nouislider.min.css?t=479" rel="stylesheet" type="text/css">
+
+    <link href="/assets/css/register.css?t=479" media="all" rel="stylesheet" type="text/css">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-VLYL4CMQKZ&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-67185306-1&amp;l=dataLayer&amp;cx=c"></script><script>
+        var MODULE = "register";
+        var VIEW = "catalog";
+        var CHECKRIGHT = "";
+        if (VIEW == '') {
+            VIEW = 'index';
+        }
+        var BASE_DIR = '';
+        var APP_LANG = "en";
+    </script>
+
+    <script src="/js/jquery.js?t=479"></script>
+    <script src="/js/scripts.js?t=479"></script>
+    <script src="/js/jquery.form.validation_new.js?t=479"></script>
+    <script src="/assets/js/select2.full.min.js?t=479"></script>
+    <script id="plugin-select2" src="/assets/js/locales/select2.js" data-i18n_errorloading="Search error" data-i18n_inputtoolong="Enter fewer characters" data-i18n_inputtooshort="Enter more characters" data-i18n_maximumselected="You cannot select more" data-i18n_noresults="Not found" data-i18n_searching="Searching..." data-i18n_loadingmore="Loading"></script>
+
+<script>
+    $(document).ready(function() {
+        $('[data-plugin="select2"]').select2({});
+    });
+</script>    <script src="/assets/js/moment.js?t=479"></script>
+    <script>moment.locale("en")</script>
+    <script src="/assets/js/bootstrap-datetimepicker.min.js?t=479"></script>
+    <script src="/assets/js/bootstrap-tour/js/bootstrap-tour.min.js?t=479"></script>
+    <script src="/assets/js/jquery.xautoresize.min.js?t=479"></script>
+    <script src="/js/ui/js/jquery-ui-1.9.0.custom.min.js?t=479"></script>
+    <script src="/assets/js/notify/bootstrap-notify.min.js?t=479"></script>
+    <script src="/assets/js/nouislider/nouislider.min.js?t=479"></script>
+    <script src="/js/jquery.timedrop.js?t=479"></script>
+    <script src="/assets/js/jquery.mask.min.js?t=479"></script>    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-117759046-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('set', {'cookie_flags': 'SameSite=None;Secure'})
+        gtag('config', 'UA-67185306-1');
+    </script>
+<script src="/assets/js/libphonenumber-js-master/libphonenumber-min.js"></script></head>
+<body class="page__register__catalog" style="padding-top: 30px;">
+    <div class="container"></div><div class="container"></div>        <div class="container">
+
+        <div class="top">
+            
+            <span>&nbsp;</span>
+            <ul class="nav nav-pills">
+            <li class="pull-right">
+            <a href="https://app.medfile.pl/register/catalog/?uuid=d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a&amp;language=pl" class="text-muted">
+                <small><i class="fal fa-globe fa-fw"></i>Polski</small>
+            </a>
+        </li>
+            <li class="pull-right">
+            <a href="https://app.medfile.pl/register/catalog/?uuid=d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a&amp;language=en" class="text-muted">
+                <small><i class="fal fa-globe fa-fw"></i>English</small>
+            </a>
+        </li>
+            <li class="pull-right">
+            <a href="https://app.medfile.pl/register/catalog/?uuid=d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a&amp;language=no" class="text-muted">
+                <small><i class="fal fa-globe fa-fw"></i>Norsk</small>
+            </a>
+        </li>
+    </ul>
+
+<div style="display:flex;align-items: center;justify-content: space-between">
+	<h1 class="top__header h">Mental Path Group</h1>
+
+            <img src="//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1eth5ckfkv5u1lvv1on91f1m6k16.png" alt="Mental Path Group" style="max-width: 200px;">
+    </div>
+
+<br>
+        </div>
+
+        <form action="" class="select-alt" method="get">
+            <input type="hidden" name="uuid" value="d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a">
+            <div class="row" style="width: 100%">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="control-label label-title ">Specialization</label>
+                        <select class="form-control select2-hidden-accessible" name="specialization" tabindex="-1" aria-hidden="true"><option value=""></option><option value="Psycholog dzieci i młodzieży"></option><option value="addiction therapist"></option><option value="child psychiatrist"></option><option value="child psychologist"></option><option value="family psychotherapist"></option><option value="family therapist"></option><option value="neurologopedist"></option><option value="pedagog"></option><option value="psychiatrist"></option><option value="psychologist"></option><option value="psychoterapeuta młodzieży"></option><option value="psychoterapia par"></option><option value="psychotherapist"></option><option value="sexologist"></option><option value="special tutor"></option><option value="speech therapist"></option><option value="terapeuta SI"></option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 283px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-specialization-cs-container"><span class="select2-selection__rendered" id="select2-specialization-cs-container" title=""><b>All specialisations</b></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="control-label label-title ">Type of visit</label>
+                        <select name="type" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option value="0"></option><option value="remote"></option><option value="non_remote"></option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 283px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-type-qr-container"><span class="select2-selection__rendered" id="select2-type-qr-container" title=""><b>Online</b> or <b>in-office</b><b>consultation</b></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="control-label label-title ">Institution</label>
+                        <select name="facility" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option value="0"></option><option value="ad1301a6-84cc-b954-ff4b-31c9d84e8ad4"></option><option value="1ac3c774-8f77-aed7-f73f-9c10f2c0062f"></option><option value="386c0153-ad3d-3688-1975-64c0d2755c6a"></option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 283px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-facility-uo-container"><span class="select2-selection__rendered" id="select2-facility-uo-container" title=""><b>All facilities</b></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="panel panel-default card__panel" style="width: 100%;">
+                            <div class="panel-body card__grid">
+                                            
+<div class="card" data-user="e8e8f7ce-bd32-d056-515f-c265b99db325">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1etf6fl7461m18pt1hc71eua9tsd.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Anna Ostrowska                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            psychologist, psychotherapist, psychoterapia par                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="e8e8f7ce-bd32-d056-515f-c265b99db325" data-toggle="modal" data-target="#services-e8e8f7ce-bd32-d056-515f-c265b99db325" id="scroll_to-e8e8f7ce-bd32-d056-515f-c265b99db325" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4" data-service_name="Konsultacja psychologiczna - dorośli">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna - dorośli
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        tomorrow    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=e8e8f7ce-bd32-d056-515f-c265b99db325&amp;language=en&amp;slot=2023-06-13 10:00&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja psychologiczna - doro\u015bli&quot;,&quot;uuid&quot;:&quot;f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&quot;,&quot;price&quot;:&quot;230.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;e8e8f7ce-bd32-d056-515f-c265b99db325&quot;,&quot;name&quot;:&quot;Anna&quot;,&quot;lastname&quot;:&quot;Ostrowska&quot;},&quot;slot&quot;:&quot;2023-06-13 10:00&quot;}">
+                                10:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=e8e8f7ce-bd32-d056-515f-c265b99db325&amp;language=en&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-e8e8f7ce-bd32-d056-515f-c265b99db325" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Anna                    Ostrowska                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="e8e8f7ce-bd32-d056-515f-c265b99db325" id="services-e8e8f7ce-bd32-d056-515f-c265b99db325" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="a47f92c1-412d-a47e-4378-5476b117e05c">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1gt9eiirc1njp1qm2q5j1luc7upd.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Agnieszka Smułkowska                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            child psychologist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="a47f92c1-412d-a47e-4378-5476b117e05c" data-toggle="modal" data-target="#services-a47f92c1-412d-a47e-4378-5476b117e05c" id="scroll_to-a47f92c1-412d-a47e-4378-5476b117e05c" --data-prefetchschedule="true" data-service_duration="60" data-service_price="250.00" data-service_uuid="3ffb568a-ee1e-0d69-e178-b3ce1f0daaec" data-service_name="Konsultacja diagnostyczna - dzieci i młodzież">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja diagnostyczna - dzieci i młodzież
+    <div>
+                    250 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            60            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        tomorrow    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=a47f92c1-412d-a47e-4378-5476b117e05c&amp;language=en&amp;slot=2023-06-13 16:00&amp;service=3ffb568a-ee1e-0d69-e178-b3ce1f0daaec&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja diagnostyczna - dzieci i m\u0142odzie\u017c&quot;,&quot;uuid&quot;:&quot;3ffb568a-ee1e-0d69-e178-b3ce1f0daaec&quot;,&quot;price&quot;:&quot;250.00&quot;,&quot;duration&quot;:60},&quot;user&quot;:{&quot;uuid&quot;:&quot;a47f92c1-412d-a47e-4378-5476b117e05c&quot;,&quot;name&quot;:&quot;Agnieszka&quot;,&quot;lastname&quot;:&quot;Smu\u0142kowska&quot;},&quot;slot&quot;:&quot;2023-06-13 16:00&quot;}">
+                                16:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=a47f92c1-412d-a47e-4378-5476b117e05c&amp;language=en&amp;service=3ffb568a-ee1e-0d69-e178-b3ce1f0daaec&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-a47f92c1-412d-a47e-4378-5476b117e05c" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Agnieszka                    Smułkowska                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="a47f92c1-412d-a47e-4378-5476b117e05c" id="services-a47f92c1-412d-a47e-4378-5476b117e05c" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="7fe4621d-4a47-1846-5d57-d2f62694ff7f">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1feltaf4s808ghan6f1kksegvj.png)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Agnieszka Smetana                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            psychologist, psychotherapist                                    </div>
+                            </div>
+        </div>
+                    <div class="card__bio">
+                                                    <span class="text-toggled">
+                        I am a licenced psychotherapist, psychologist and certified trainer in motivational interviewing (coaching) and group &amp; ...
+                        <a data-toggle="modal" data-target="#bio-7fe4621d-4a47-1846-5d57-d2f62694ff7f" class="text-muted" href="#">
+                            see full description                        </a>
+                    </span>
+                            </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="7fe4621d-4a47-1846-5d57-d2f62694ff7f" data-toggle="modal" data-target="#services-7fe4621d-4a47-1846-5d57-d2f62694ff7f" id="scroll_to-7fe4621d-4a47-1846-5d57-d2f62694ff7f" --data-prefetchschedule="true" data-service_duration="50" data-service_price="280.00" data-service_uuid="1d34e686-fce6-2bca-428f-8b804550ef25" data-service_name="Consultation in English ONLINE">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+            <i class="fa-fw fas fa-phone text-info" title="An e-Visit"></i>
+    
+    Consultation in English ONLINE
+    <div>
+                    280 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-14    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=7fe4621d-4a47-1846-5d57-d2f62694ff7f&amp;language=en&amp;slot=2023-06-14 10:00&amp;service=1d34e686-fce6-2bca-428f-8b804550ef25&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Consultation in English ONLINE&quot;,&quot;uuid&quot;:&quot;1d34e686-fce6-2bca-428f-8b804550ef25&quot;,&quot;price&quot;:&quot;280.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;7fe4621d-4a47-1846-5d57-d2f62694ff7f&quot;,&quot;name&quot;:&quot;Agnieszka&quot;,&quot;lastname&quot;:&quot;Smetana&quot;},&quot;slot&quot;:&quot;2023-06-14 10:00&quot;}">
+                                10:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=7fe4621d-4a47-1846-5d57-d2f62694ff7f&amp;language=en&amp;service=1d34e686-fce6-2bca-428f-8b804550ef25&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-7fe4621d-4a47-1846-5d57-d2f62694ff7f" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Agnieszka                    Smetana                </h4>
+            </div>
+            <div class="modal-body">
+                I am a licenced psychotherapist, psychologist and certified trainer in motivational interviewing (coaching) and group &amp; individual crisis interventions. I work in Polish and English. My approach is collaborative and practical using behavioural modalities including 3rd waives therapies: CBT (cognitive – behavioural therapy), schema therapy, ACT (acceptance – commitment therapy), DBT (dialectical- behavioural therapy), mindfulness and integrate psychotherapy.            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="7fe4621d-4a47-1846-5d57-d2f62694ff7f" id="services-7fe4621d-4a47-1846-5d57-d2f62694ff7f" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="8ad74e83-cfb1-a945-484b-ff2d4e3bf501">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/noname_4.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Anna Dalida                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            Psycholog dzieci i młodzieży                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="8ad74e83-cfb1-a945-484b-ff2d4e3bf501" data-toggle="modal" data-target="#services-8ad74e83-cfb1-a945-484b-ff2d4e3bf501" id="scroll_to-8ad74e83-cfb1-a945-484b-ff2d4e3bf501" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="42f90649-1a2b-38d7-3ff8-728532eb9f34" data-service_name="Konsultacja psychologiczna w sprawie dziecka (pierwsza)">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna w sprawie dziecka (pierwsza)
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-14    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=8ad74e83-cfb1-a945-484b-ff2d4e3bf501&amp;language=en&amp;slot=2023-06-14 10:00&amp;service=42f90649-1a2b-38d7-3ff8-728532eb9f34&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja psychologiczna w sprawie dziecka (pierwsza)&quot;,&quot;uuid&quot;:&quot;42f90649-1a2b-38d7-3ff8-728532eb9f34&quot;,&quot;price&quot;:&quot;230.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;8ad74e83-cfb1-a945-484b-ff2d4e3bf501&quot;,&quot;name&quot;:&quot;Anna&quot;,&quot;lastname&quot;:&quot;Dalida&quot;},&quot;slot&quot;:&quot;2023-06-14 10:00&quot;}">
+                                10:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=8ad74e83-cfb1-a945-484b-ff2d4e3bf501&amp;language=en&amp;service=42f90649-1a2b-38d7-3ff8-728532eb9f34&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-8ad74e83-cfb1-a945-484b-ff2d4e3bf501" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Anna                    Dalida                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="8ad74e83-cfb1-a945-484b-ff2d4e3bf501" id="services-8ad74e83-cfb1-a945-484b-ff2d4e3bf501" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="6181b2df-dd01-65f7-d3e2-072388b3949f">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1etf6ek77i4eldk1kh1141t13hfd.png)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Magda Kozłowska                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            psychologist, psychotherapist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="6181b2df-dd01-65f7-d3e2-072388b3949f" data-toggle="modal" data-target="#services-6181b2df-dd01-65f7-d3e2-072388b3949f" id="scroll_to-6181b2df-dd01-65f7-d3e2-072388b3949f" --data-prefetchschedule="true" data-service_duration="45" data-service_price="210.00" data-service_uuid="7a083002-8bd7-7910-d3e2-45757d22178b" data-service_name="Konsultacja psychologiczna - młodzież">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna - młodzież
+    <div>
+                    210 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            45            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-14    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=6181b2df-dd01-65f7-d3e2-072388b3949f&amp;language=en&amp;slot=2023-06-14 12:00&amp;service=7a083002-8bd7-7910-d3e2-45757d22178b&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja psychologiczna - m\u0142odzie\u017c&quot;,&quot;uuid&quot;:&quot;7a083002-8bd7-7910-d3e2-45757d22178b&quot;,&quot;price&quot;:&quot;210.00&quot;,&quot;duration&quot;:45},&quot;user&quot;:{&quot;uuid&quot;:&quot;6181b2df-dd01-65f7-d3e2-072388b3949f&quot;,&quot;name&quot;:&quot;Magda&quot;,&quot;lastname&quot;:&quot;Koz\u0142owska&quot;},&quot;slot&quot;:&quot;2023-06-14 12:00&quot;}">
+                                12:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=6181b2df-dd01-65f7-d3e2-072388b3949f&amp;language=en&amp;service=7a083002-8bd7-7910-d3e2-45757d22178b&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-6181b2df-dd01-65f7-d3e2-072388b3949f" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Magda                    Kozłowska                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="6181b2df-dd01-65f7-d3e2-072388b3949f" id="services-6181b2df-dd01-65f7-d3e2-072388b3949f" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="a9fc0f61-38e8-18ae-f3d0-0889568a1e72">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1f0h19d4n1lfqa1b9i54pvdebd.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Marzena Przybylska -Dzieciątkowska                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            psychotherapist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="a9fc0f61-38e8-18ae-f3d0-0889568a1e72" data-toggle="modal" data-target="#services-a9fc0f61-38e8-18ae-f3d0-0889568a1e72" id="scroll_to-a9fc0f61-38e8-18ae-f3d0-0889568a1e72" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4" data-service_name="Konsultacja psychologiczna - dorośli">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna - dorośli
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-14    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=a9fc0f61-38e8-18ae-f3d0-0889568a1e72&amp;language=en&amp;slot=2023-06-14 14:00&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja psychologiczna - doro\u015bli&quot;,&quot;uuid&quot;:&quot;f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&quot;,&quot;price&quot;:&quot;230.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;a9fc0f61-38e8-18ae-f3d0-0889568a1e72&quot;,&quot;name&quot;:&quot;Marzena&quot;,&quot;lastname&quot;:&quot;Przybylska -Dzieci\u0105tkowska&quot;},&quot;slot&quot;:&quot;2023-06-14 14:00&quot;}">
+                                14:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=a9fc0f61-38e8-18ae-f3d0-0889568a1e72&amp;language=en&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-a9fc0f61-38e8-18ae-f3d0-0889568a1e72" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Marzena                    Przybylska -Dzieciątkowska                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="a9fc0f61-38e8-18ae-f3d0-0889568a1e72" id="services-a9fc0f61-38e8-18ae-f3d0-0889568a1e72" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="5fa15339-1345-df6a-2980-be5aecff3d52">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(/assets/img/nouserphoto.png)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Monika  Wałaszek                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            speech therapist                                    </div>
+                            </div>
+        </div>
+                    <div class="card__bio">
+                                                    <span class="text-toggled">
+                        Provider Neuroflow<br>
+Zakres wieku: 1 r.ż. do 18 lat.<br>
+Schorzenia, którymi się zajmuje:<br>
+dyslalia, ORM, autyzm, dziecięca ...
+                        <a data-toggle="modal" data-target="#bio-5fa15339-1345-df6a-2980-be5aecff3d52" class="text-muted" href="#">
+                            see full description                        </a>
+                    </span>
+                            </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="5fa15339-1345-df6a-2980-be5aecff3d52" data-toggle="modal" data-target="#services-5fa15339-1345-df6a-2980-be5aecff3d52" id="scroll_to-5fa15339-1345-df6a-2980-be5aecff3d52" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="43f37f16-e4ef-5211-623a-dc08be886f76" data-service_name="Konsultacja logopedyczna - dzieci i młodzież">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja logopedyczna - dzieci i młodzież
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-15    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=5fa15339-1345-df6a-2980-be5aecff3d52&amp;language=en&amp;slot=2023-06-15 09:00&amp;service=43f37f16-e4ef-5211-623a-dc08be886f76&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja logopedyczna - dzieci i m\u0142odzie\u017c&quot;,&quot;uuid&quot;:&quot;43f37f16-e4ef-5211-623a-dc08be886f76&quot;,&quot;price&quot;:&quot;230.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;5fa15339-1345-df6a-2980-be5aecff3d52&quot;,&quot;name&quot;:&quot;Monika &quot;,&quot;lastname&quot;:&quot;Wa\u0142aszek&quot;},&quot;slot&quot;:&quot;2023-06-15 09:00&quot;}">
+                                09:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=5fa15339-1345-df6a-2980-be5aecff3d52&amp;language=en&amp;service=43f37f16-e4ef-5211-623a-dc08be886f76&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-5fa15339-1345-df6a-2980-be5aecff3d52" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Monika                     Wałaszek                </h4>
+            </div>
+            <div class="modal-body">
+                Provider Neuroflow<br>
+Zakres wieku: 1 r.ż. do 18 lat.<br>
+Schorzenia, którymi się zajmuje:<br>
+dyslalia, ORM, autyzm, dziecięca apraksja mowy            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="5fa15339-1345-df6a-2980-be5aecff3d52" id="services-5fa15339-1345-df6a-2980-be5aecff3d52" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="52d75ecb-828b-f9cc-bbfe-0f0e8b67f39f">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1gpv2aud2e0u12ged6gcc4ra3d.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Anna Sadomska                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            pedagog                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="52d75ecb-828b-f9cc-bbfe-0f0e8b67f39f" data-toggle="modal" data-target="#services-52d75ecb-828b-f9cc-bbfe-0f0e8b67f39f" id="scroll_to-52d75ecb-828b-f9cc-bbfe-0f0e8b67f39f" --data-prefetchschedule="true" data-service_duration="50" data-service_price="250.00" data-service_uuid="a246ffe4-d3f9-b823-f592-6c250a9e3ccb" data-service_name="Konsultacja integracji sensorycznej SI - dzieci i młodzież">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja integracji sensorycznej SI - dzieci i młodzież
+    <div>
+                    250 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-16    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=52d75ecb-828b-f9cc-bbfe-0f0e8b67f39f&amp;language=en&amp;slot=2023-06-16 10:00&amp;service=a246ffe4-d3f9-b823-f592-6c250a9e3ccb&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja integracji sensorycznej SI - dzieci i m\u0142odzie\u017c&quot;,&quot;uuid&quot;:&quot;a246ffe4-d3f9-b823-f592-6c250a9e3ccb&quot;,&quot;price&quot;:&quot;250.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;52d75ecb-828b-f9cc-bbfe-0f0e8b67f39f&quot;,&quot;name&quot;:&quot;Anna&quot;,&quot;lastname&quot;:&quot;Sadomska&quot;},&quot;slot&quot;:&quot;2023-06-16 10:00&quot;}">
+                                10:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=52d75ecb-828b-f9cc-bbfe-0f0e8b67f39f&amp;language=en&amp;service=a246ffe4-d3f9-b823-f592-6c250a9e3ccb&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-52d75ecb-828b-f9cc-bbfe-0f0e8b67f39f" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Anna                    Sadomska                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="52d75ecb-828b-f9cc-bbfe-0f0e8b67f39f" id="services-52d75ecb-828b-f9cc-bbfe-0f0e8b67f39f" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="40bd5558-1b03-2a8e-7194-d232c5908fc0">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1gh8pdgml19cu18fd854165sfnmd.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Katarzyna  Gniadecka                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            neurologopedist, terapeuta SI                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="40bd5558-1b03-2a8e-7194-d232c5908fc0" data-toggle="modal" data-target="#services-40bd5558-1b03-2a8e-7194-d232c5908fc0" id="scroll_to-40bd5558-1b03-2a8e-7194-d232c5908fc0" --data-prefetchschedule="true" data-service_duration="50" data-service_price="250.00" data-service_uuid="b61db820-f04a-23b1-7702-0117b3e4d897" data-service_name="Konsultacja neurologopedyczna">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja neurologopedyczna
+    <div>
+                    250 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-16    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=40bd5558-1b03-2a8e-7194-d232c5908fc0&amp;language=en&amp;slot=2023-06-16 11:00&amp;service=b61db820-f04a-23b1-7702-0117b3e4d897&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja neurologopedyczna&quot;,&quot;uuid&quot;:&quot;b61db820-f04a-23b1-7702-0117b3e4d897&quot;,&quot;price&quot;:&quot;250.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;40bd5558-1b03-2a8e-7194-d232c5908fc0&quot;,&quot;name&quot;:&quot;Katarzyna &quot;,&quot;lastname&quot;:&quot;Gniadecka&quot;},&quot;slot&quot;:&quot;2023-06-16 11:00&quot;}">
+                                11:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=40bd5558-1b03-2a8e-7194-d232c5908fc0&amp;language=en&amp;service=b61db820-f04a-23b1-7702-0117b3e4d897&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-40bd5558-1b03-2a8e-7194-d232c5908fc0" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Katarzyna                     Gniadecka                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="40bd5558-1b03-2a8e-7194-d232c5908fc0" id="services-40bd5558-1b03-2a8e-7194-d232c5908fc0" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="5fe36bdb-5263-0268-9455-08186836f893">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1g8bep07iqbg1h34k5uci412d1d.png)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                        mgr                        Magdalena Trojanowska                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            child psychologist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="5fe36bdb-5263-0268-9455-08186836f893" data-toggle="modal" data-target="#services-5fe36bdb-5263-0268-9455-08186836f893" id="scroll_to-5fe36bdb-5263-0268-9455-08186836f893" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="42f90649-1a2b-38d7-3ff8-728532eb9f34" data-service_name="Konsultacja psychologiczna w sprawie dziecka (pierwsza)">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna w sprawie dziecka (pierwsza)
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-16    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=5fe36bdb-5263-0268-9455-08186836f893&amp;language=en&amp;slot=2023-06-16 15:00&amp;service=42f90649-1a2b-38d7-3ff8-728532eb9f34&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja psychologiczna w sprawie dziecka (pierwsza)&quot;,&quot;uuid&quot;:&quot;42f90649-1a2b-38d7-3ff8-728532eb9f34&quot;,&quot;price&quot;:&quot;230.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;5fe36bdb-5263-0268-9455-08186836f893&quot;,&quot;name&quot;:&quot;Magdalena&quot;,&quot;lastname&quot;:&quot;Trojanowska&quot;},&quot;slot&quot;:&quot;2023-06-16 15:00&quot;}">
+                                15:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=5fe36bdb-5263-0268-9455-08186836f893&amp;language=en&amp;service=42f90649-1a2b-38d7-3ff8-728532eb9f34&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-5fe36bdb-5263-0268-9455-08186836f893" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    mgr                    Magdalena                    Trojanowska                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="5fe36bdb-5263-0268-9455-08186836f893" id="services-5fe36bdb-5263-0268-9455-08186836f893" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="3f1c1c72-f9a0-5625-78c5-bad36e69289d">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1felrrmcj155o1igc1kjq9db1nrv6d.png)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Magdalena Rudzińska                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            psychologist, psychotherapist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="3f1c1c72-f9a0-5625-78c5-bad36e69289d" data-toggle="modal" data-target="#services-3f1c1c72-f9a0-5625-78c5-bad36e69289d" id="scroll_to-3f1c1c72-f9a0-5625-78c5-bad36e69289d" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4" data-service_name="Konsultacja psychologiczna - dorośli">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna - dorośli
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-16    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=3f1c1c72-f9a0-5625-78c5-bad36e69289d&amp;language=en&amp;slot=2023-06-16 15:00&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja psychologiczna - doro\u015bli&quot;,&quot;uuid&quot;:&quot;f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&quot;,&quot;price&quot;:&quot;230.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;3f1c1c72-f9a0-5625-78c5-bad36e69289d&quot;,&quot;name&quot;:&quot;Magdalena&quot;,&quot;lastname&quot;:&quot;Rudzi\u0144ska&quot;},&quot;slot&quot;:&quot;2023-06-16 15:00&quot;}">
+                                15:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=3f1c1c72-f9a0-5625-78c5-bad36e69289d&amp;language=en&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-3f1c1c72-f9a0-5625-78c5-bad36e69289d" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Magdalena                    Rudzińska                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="3f1c1c72-f9a0-5625-78c5-bad36e69289d" id="services-3f1c1c72-f9a0-5625-78c5-bad36e69289d" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="124c673f-3da5-c0fc-edf4-6438fbeabb5e">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1feg8evpc14o51849168mtetjcad.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                        mgr                        Anna Bukała                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            speech therapist, special tutor, terapeuta SI                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="124c673f-3da5-c0fc-edf4-6438fbeabb5e" data-toggle="modal" data-target="#services-124c673f-3da5-c0fc-edf4-6438fbeabb5e" id="scroll_to-124c673f-3da5-c0fc-edf4-6438fbeabb5e" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="43f37f16-e4ef-5211-623a-dc08be886f76" data-service_name="Konsultacja logopedyczna - dzieci i młodzież">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja logopedyczna - dzieci i młodzież
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-16    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=124c673f-3da5-c0fc-edf4-6438fbeabb5e&amp;language=en&amp;slot=2023-06-16 18:00&amp;service=43f37f16-e4ef-5211-623a-dc08be886f76&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja logopedyczna - dzieci i m\u0142odzie\u017c&quot;,&quot;uuid&quot;:&quot;43f37f16-e4ef-5211-623a-dc08be886f76&quot;,&quot;price&quot;:&quot;230.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;124c673f-3da5-c0fc-edf4-6438fbeabb5e&quot;,&quot;name&quot;:&quot;Anna&quot;,&quot;lastname&quot;:&quot;Buka\u0142a&quot;},&quot;slot&quot;:&quot;2023-06-16 18:00&quot;}">
+                                18:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=124c673f-3da5-c0fc-edf4-6438fbeabb5e&amp;language=en&amp;service=43f37f16-e4ef-5211-623a-dc08be886f76&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-124c673f-3da5-c0fc-edf4-6438fbeabb5e" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    mgr                    Anna                    Bukała                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="124c673f-3da5-c0fc-edf4-6438fbeabb5e" id="services-124c673f-3da5-c0fc-edf4-6438fbeabb5e" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="06a446c2-6215-7912-d988-537da112a135">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1gpsodv87qomf0q1p2cshl748d.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                        Pedagog                        Anna Banasiewicz                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            pedagog, terapeuta SI                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="06a446c2-6215-7912-d988-537da112a135" data-toggle="modal" data-target="#services-06a446c2-6215-7912-d988-537da112a135" id="scroll_to-06a446c2-6215-7912-d988-537da112a135" --data-prefetchschedule="true" data-service_duration="50" data-service_price="250.00" data-service_uuid="a246ffe4-d3f9-b823-f592-6c250a9e3ccb" data-service_name="Konsultacja integracji sensorycznej SI - dzieci i młodzież">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja integracji sensorycznej SI - dzieci i młodzież
+    <div>
+                    250 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-19    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=06a446c2-6215-7912-d988-537da112a135&amp;language=en&amp;slot=2023-06-19 11:00&amp;service=a246ffe4-d3f9-b823-f592-6c250a9e3ccb&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja integracji sensorycznej SI - dzieci i m\u0142odzie\u017c&quot;,&quot;uuid&quot;:&quot;a246ffe4-d3f9-b823-f592-6c250a9e3ccb&quot;,&quot;price&quot;:&quot;250.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;06a446c2-6215-7912-d988-537da112a135&quot;,&quot;name&quot;:&quot;Anna&quot;,&quot;lastname&quot;:&quot;Banasiewicz&quot;},&quot;slot&quot;:&quot;2023-06-19 11:00&quot;}">
+                                11:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=06a446c2-6215-7912-d988-537da112a135&amp;language=en&amp;service=a246ffe4-d3f9-b823-f592-6c250a9e3ccb&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-06a446c2-6215-7912-d988-537da112a135" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Pedagog                    Anna                    Banasiewicz                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="06a446c2-6215-7912-d988-537da112a135" id="services-06a446c2-6215-7912-d988-537da112a135" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="3fe6dd1f-3512-575c-e639-605505d6782b">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1g8beici91cd9nbh40d1vhp1n23d.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Małgorzata Brach                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            pedagog, child psychologist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="3fe6dd1f-3512-575c-e639-605505d6782b" data-toggle="modal" data-target="#services-3fe6dd1f-3512-575c-e639-605505d6782b" id="scroll_to-3fe6dd1f-3512-575c-e639-605505d6782b" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="42f90649-1a2b-38d7-3ff8-728532eb9f34" data-service_name="Konsultacja psychologiczna w sprawie dziecka (pierwsza)">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna w sprawie dziecka (pierwsza)
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-19    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=3fe6dd1f-3512-575c-e639-605505d6782b&amp;language=en&amp;slot=2023-06-19 14:00&amp;service=42f90649-1a2b-38d7-3ff8-728532eb9f34&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja psychologiczna w sprawie dziecka (pierwsza)&quot;,&quot;uuid&quot;:&quot;42f90649-1a2b-38d7-3ff8-728532eb9f34&quot;,&quot;price&quot;:&quot;230.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;3fe6dd1f-3512-575c-e639-605505d6782b&quot;,&quot;name&quot;:&quot;Ma\u0142gorzata&quot;,&quot;lastname&quot;:&quot;Brach&quot;},&quot;slot&quot;:&quot;2023-06-19 14:00&quot;}">
+                                14:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=3fe6dd1f-3512-575c-e639-605505d6782b&amp;language=en&amp;service=42f90649-1a2b-38d7-3ff8-728532eb9f34&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-3fe6dd1f-3512-575c-e639-605505d6782b" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Małgorzata                    Brach                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="3fe6dd1f-3512-575c-e639-605505d6782b" id="services-3fe6dd1f-3512-575c-e639-605505d6782b" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="5ae61ba4-6001-250a-66ac-eb6addcc3e78">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1gqu71gnj3n9crqhk83chf6qd.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                        dr n med                        Ewa  Racicka-Pawlukiewicz                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            child psychiatrist                                    </div>
+                            </div>
+        </div>
+                    <div class="card__bio">
+                                                    Przyjmuje pacjentów od 3 r.ż. do 10 r.ż.                            </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="5ae61ba4-6001-250a-66ac-eb6addcc3e78" data-toggle="modal" data-target="#services-5ae61ba4-6001-250a-66ac-eb6addcc3e78" id="scroll_to-5ae61ba4-6001-250a-66ac-eb6addcc3e78" --data-prefetchschedule="true" data-service_duration="25" data-service_price="300.00" data-service_uuid="d11487cd-67c6-fd0d-dce6-e4b0a887b72e" data-service_name="Kontrolna konsultacja psychiatryczna - dzieci i młodzież od 3 r.ż. do 10 r.ż.">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Kontrolna konsultacja psychiatryczna - dzieci i młodzież od 3 r.ż. do 10 r.ż.
+    <div>
+                    300 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            25            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-19    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=5ae61ba4-6001-250a-66ac-eb6addcc3e78&amp;language=en&amp;slot=2023-06-19 14:30&amp;service=d11487cd-67c6-fd0d-dce6-e4b0a887b72e&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Kontrolna konsultacja psychiatryczna - dzieci i m\u0142odzie\u017c od 3 r.\u017c. do 10 r.\u017c.&quot;,&quot;uuid&quot;:&quot;d11487cd-67c6-fd0d-dce6-e4b0a887b72e&quot;,&quot;price&quot;:&quot;300.00&quot;,&quot;duration&quot;:25},&quot;user&quot;:{&quot;uuid&quot;:&quot;5ae61ba4-6001-250a-66ac-eb6addcc3e78&quot;,&quot;name&quot;:&quot;Ewa &quot;,&quot;lastname&quot;:&quot;Racicka-Pawlukiewicz&quot;},&quot;slot&quot;:&quot;2023-06-19 14:30&quot;}">
+                                14:30            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=5ae61ba4-6001-250a-66ac-eb6addcc3e78&amp;language=en&amp;service=d11487cd-67c6-fd0d-dce6-e4b0a887b72e&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-5ae61ba4-6001-250a-66ac-eb6addcc3e78" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    dr n med                    Ewa                     Racicka-Pawlukiewicz                </h4>
+            </div>
+            <div class="modal-body">
+                Przyjmuje pacjentów od 3 r.ż. do 10 r.ż.            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="5ae61ba4-6001-250a-66ac-eb6addcc3e78" id="services-5ae61ba4-6001-250a-66ac-eb6addcc3e78" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="ab853ace-1444-d775-a29e-9cd8a2619114">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1etf6di88g4m9c3o8cvo85rqd.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Joanna Bielan                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            psychologist, psychotherapist, addiction therapist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="ab853ace-1444-d775-a29e-9cd8a2619114" data-toggle="modal" data-target="#services-ab853ace-1444-d775-a29e-9cd8a2619114" id="scroll_to-ab853ace-1444-d775-a29e-9cd8a2619114" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4" data-service_name="Konsultacja psychologiczna - dorośli">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna - dorośli
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-19    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=ab853ace-1444-d775-a29e-9cd8a2619114&amp;language=en&amp;slot=2023-06-19 15:00&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja psychologiczna - doro\u015bli&quot;,&quot;uuid&quot;:&quot;f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&quot;,&quot;price&quot;:&quot;230.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;ab853ace-1444-d775-a29e-9cd8a2619114&quot;,&quot;name&quot;:&quot;Joanna&quot;,&quot;lastname&quot;:&quot;Bielan&quot;},&quot;slot&quot;:&quot;2023-06-19 15:00&quot;}">
+                                15:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=ab853ace-1444-d775-a29e-9cd8a2619114&amp;language=en&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-ab853ace-1444-d775-a29e-9cd8a2619114" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Joanna                    Bielan                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="ab853ace-1444-d775-a29e-9cd8a2619114" id="services-ab853ace-1444-d775-a29e-9cd8a2619114" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="58bbbc58-c486-89ba-dd47-cef42f23ab93">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1fqekqt7sulqjrg105k1qrg1ss7d.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Magda Tryk-Korycka                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            psychologist, psychotherapist, psychoterapeuta młodzieży, family psychotherapist, psychoterapia par                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="58bbbc58-c486-89ba-dd47-cef42f23ab93" data-toggle="modal" data-target="#services-58bbbc58-c486-89ba-dd47-cef42f23ab93" id="scroll_to-58bbbc58-c486-89ba-dd47-cef42f23ab93" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4" data-service_name="Konsultacja psychologiczna - dorośli">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna - dorośli
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-19    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=58bbbc58-c486-89ba-dd47-cef42f23ab93&amp;language=en&amp;slot=2023-06-19 17:00&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja psychologiczna - doro\u015bli&quot;,&quot;uuid&quot;:&quot;f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&quot;,&quot;price&quot;:&quot;230.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;58bbbc58-c486-89ba-dd47-cef42f23ab93&quot;,&quot;name&quot;:&quot;Magda&quot;,&quot;lastname&quot;:&quot;Tryk-Korycka&quot;},&quot;slot&quot;:&quot;2023-06-19 17:00&quot;}">
+                                17:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=58bbbc58-c486-89ba-dd47-cef42f23ab93&amp;language=en&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-58bbbc58-c486-89ba-dd47-cef42f23ab93" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Magda                    Tryk-Korycka                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="58bbbc58-c486-89ba-dd47-cef42f23ab93" id="services-58bbbc58-c486-89ba-dd47-cef42f23ab93" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="99c2f62b-f376-542e-1f9a-230bbf33f523">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1g8beltiqavd12p28jo1k23p6dd.png)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Zuzanna Jentkiewicz                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            psychologist, child psychologist, family therapist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="99c2f62b-f376-542e-1f9a-230bbf33f523" data-toggle="modal" data-target="#services-99c2f62b-f376-542e-1f9a-230bbf33f523" id="scroll_to-99c2f62b-f376-542e-1f9a-230bbf33f523" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4" data-service_name="Konsultacja psychologiczna - dorośli">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna - dorośli
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-20    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=99c2f62b-f376-542e-1f9a-230bbf33f523&amp;language=en&amp;slot=2023-06-20 13:00&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja psychologiczna - doro\u015bli&quot;,&quot;uuid&quot;:&quot;f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&quot;,&quot;price&quot;:&quot;230.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;99c2f62b-f376-542e-1f9a-230bbf33f523&quot;,&quot;name&quot;:&quot;Zuzanna&quot;,&quot;lastname&quot;:&quot;Jentkiewicz&quot;},&quot;slot&quot;:&quot;2023-06-20 13:00&quot;}">
+                                13:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=99c2f62b-f376-542e-1f9a-230bbf33f523&amp;language=en&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-99c2f62b-f376-542e-1f9a-230bbf33f523" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Zuzanna                    Jentkiewicz                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="99c2f62b-f376-542e-1f9a-230bbf33f523" id="services-99c2f62b-f376-542e-1f9a-230bbf33f523" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="08a687ac-7c80-65d3-4e73-240e5894fbb1">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1gb7anbr5115actniso14o91c42d.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Klaudia Owczarczyk                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            psychotherapist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="08a687ac-7c80-65d3-4e73-240e5894fbb1" data-toggle="modal" data-target="#services-08a687ac-7c80-65d3-4e73-240e5894fbb1" id="scroll_to-08a687ac-7c80-65d3-4e73-240e5894fbb1" --data-prefetchschedule="true" data-service_duration="50" data-service_price="1 200.00" data-service_uuid="9271ce9a-6dad-9fa0-e26b-aa42477d1618" data-service_name="Badanie ADOS - 2 (konsultacja, badanie, omówienie)">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Badanie ADOS - 2 (konsultacja, badanie, omówienie)
+    <div>
+                    1200 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-06-26    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=08a687ac-7c80-65d3-4e73-240e5894fbb1&amp;language=en&amp;slot=2023-06-26 15:00&amp;service=9271ce9a-6dad-9fa0-e26b-aa42477d1618&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Badanie ADOS - 2 (konsultacja, badanie, om\u00f3wienie)&quot;,&quot;uuid&quot;:&quot;9271ce9a-6dad-9fa0-e26b-aa42477d1618&quot;,&quot;price&quot;:&quot;1200.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;08a687ac-7c80-65d3-4e73-240e5894fbb1&quot;,&quot;name&quot;:&quot;Klaudia&quot;,&quot;lastname&quot;:&quot;Owczarczyk&quot;},&quot;slot&quot;:&quot;2023-06-26 15:00&quot;}">
+                                15:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=08a687ac-7c80-65d3-4e73-240e5894fbb1&amp;language=en&amp;service=9271ce9a-6dad-9fa0-e26b-aa42477d1618&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-08a687ac-7c80-65d3-4e73-240e5894fbb1" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Klaudia                    Owczarczyk                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="08a687ac-7c80-65d3-4e73-240e5894fbb1" id="services-08a687ac-7c80-65d3-4e73-240e5894fbb1" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="131886ec-19f5-6604-4661-d3146536a28b">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1gfaofckm11ra10p11flftqv1u77d.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Weronika Dzierżawa – Nalewajska                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            psychologist, child psychologist, psychotherapist, psychoterapeuta młodzieży, family therapist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="131886ec-19f5-6604-4661-d3146536a28b" data-toggle="modal" data-target="#services-131886ec-19f5-6604-4661-d3146536a28b" id="scroll_to-131886ec-19f5-6604-4661-d3146536a28b" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4" data-service_name="Konsultacja psychologiczna - dorośli">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna - dorośli
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-07-03    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=131886ec-19f5-6604-4661-d3146536a28b&amp;language=en&amp;slot=2023-07-03 16:00&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja psychologiczna - doro\u015bli&quot;,&quot;uuid&quot;:&quot;f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&quot;,&quot;price&quot;:&quot;230.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;131886ec-19f5-6604-4661-d3146536a28b&quot;,&quot;name&quot;:&quot;Weronika&quot;,&quot;lastname&quot;:&quot;Dzier\u017cawa \u2013 Nalewajska&quot;},&quot;slot&quot;:&quot;2023-07-03 16:00&quot;}">
+                                16:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=131886ec-19f5-6604-4661-d3146536a28b&amp;language=en&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-131886ec-19f5-6604-4661-d3146536a28b" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Weronika                    Dzierżawa – Nalewajska                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="131886ec-19f5-6604-4661-d3146536a28b" id="services-131886ec-19f5-6604-4661-d3146536a28b" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="315e699b-5d05-47b0-c8ad-4977fddedd87">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1g8bevr8ff9toqh4ta1kc91hr2d.png)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                        mgr                        Aneta Chojecka                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            child psychologist, psychotherapist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="315e699b-5d05-47b0-c8ad-4977fddedd87" data-toggle="modal" data-target="#services-315e699b-5d05-47b0-c8ad-4977fddedd87" id="scroll_to-315e699b-5d05-47b0-c8ad-4977fddedd87" --data-prefetchschedule="true" data-service_duration="50" data-service_price="1 200.00" data-service_uuid="9271ce9a-6dad-9fa0-e26b-aa42477d1618" data-service_name="Badanie ADOS - 2 (konsultacja, badanie, omówienie)">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Badanie ADOS - 2 (konsultacja, badanie, omówienie)
+    <div>
+                    1200 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-07-04    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=315e699b-5d05-47b0-c8ad-4977fddedd87&amp;language=en&amp;slot=2023-07-04 09:00&amp;service=9271ce9a-6dad-9fa0-e26b-aa42477d1618&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Badanie ADOS - 2 (konsultacja, badanie, om\u00f3wienie)&quot;,&quot;uuid&quot;:&quot;9271ce9a-6dad-9fa0-e26b-aa42477d1618&quot;,&quot;price&quot;:&quot;1200.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;315e699b-5d05-47b0-c8ad-4977fddedd87&quot;,&quot;name&quot;:&quot;Aneta&quot;,&quot;lastname&quot;:&quot;Chojecka&quot;},&quot;slot&quot;:&quot;2023-07-04 09:00&quot;}">
+                                09:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=315e699b-5d05-47b0-c8ad-4977fddedd87&amp;language=en&amp;service=9271ce9a-6dad-9fa0-e26b-aa42477d1618&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-315e699b-5d05-47b0-c8ad-4977fddedd87" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    mgr                    Aneta                    Chojecka                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="315e699b-5d05-47b0-c8ad-4977fddedd87" id="services-315e699b-5d05-47b0-c8ad-4977fddedd87" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="a26dbc7b-25fb-dab4-242c-1f0e1a964939">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1g8befm9i3o5aha1idu10rtvj4d.png)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Jolanta Kowalczyk                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            special tutor, child psychologist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="a26dbc7b-25fb-dab4-242c-1f0e1a964939" data-toggle="modal" data-target="#services-a26dbc7b-25fb-dab4-242c-1f0e1a964939" id="scroll_to-a26dbc7b-25fb-dab4-242c-1f0e1a964939" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="42f90649-1a2b-38d7-3ff8-728532eb9f34" data-service_name="Konsultacja psychologiczna w sprawie dziecka (pierwsza)">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna w sprawie dziecka (pierwsza)
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        2023-07-05    </strong>
+</div>
+
+<div class="card__hours">
+                        <a class="card__hour " href="https://app.medfile.pl/register/form/?uuid=a26dbc7b-25fb-dab4-242c-1f0e1a964939&amp;language=en&amp;slot=2023-07-05 16:00&amp;service=42f90649-1a2b-38d7-3ff8-728532eb9f34&amp;facility=&amp;style=&amp;grouped=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog" data-event="{&quot;service&quot;:{&quot;name&quot;:&quot;Konsultacja psychologiczna w sprawie dziecka (pierwsza)&quot;,&quot;uuid&quot;:&quot;42f90649-1a2b-38d7-3ff8-728532eb9f34&quot;,&quot;price&quot;:&quot;230.00&quot;,&quot;duration&quot;:50},&quot;user&quot;:{&quot;uuid&quot;:&quot;a26dbc7b-25fb-dab4-242c-1f0e1a964939&quot;,&quot;name&quot;:&quot;Jolanta&quot;,&quot;lastname&quot;:&quot;Kowalczyk&quot;},&quot;slot&quot;:&quot;2023-07-05 16:00&quot;}">
+                                16:00            </a>
+            
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=a26dbc7b-25fb-dab4-242c-1f0e1a964939&amp;language=en&amp;service=42f90649-1a2b-38d7-3ff8-728532eb9f34&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-a26dbc7b-25fb-dab4-242c-1f0e1a964939" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Jolanta                    Kowalczyk                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="a26dbc7b-25fb-dab4-242c-1f0e1a964939" id="services-a26dbc7b-25fb-dab4-242c-1f0e1a964939" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="c1db913f-ad33-93e6-44f2-c71f5ead7619">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1etvbah5cd0q1usn5ao1ckd15doh.png)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Agata Nowakowska-Pawełek                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            psychologist, psychotherapist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="c1db913f-ad33-93e6-44f2-c71f5ead7619" data-toggle="modal" data-target="#services-c1db913f-ad33-93e6-44f2-c71f5ead7619" id="scroll_to-c1db913f-ad33-93e6-44f2-c71f5ead7619" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4" data-service_name="Konsultacja psychologiczna - dorośli">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna - dorośli
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        none    </strong>
+</div>
+
+<div class="card__hours">
+                
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=c1db913f-ad33-93e6-44f2-c71f5ead7619&amp;language=en&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-c1db913f-ad33-93e6-44f2-c71f5ead7619" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Agata                    Nowakowska-Pawełek                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="c1db913f-ad33-93e6-44f2-c71f5ead7619" id="services-c1db913f-ad33-93e6-44f2-c71f5ead7619" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="3bfb2b83-735a-3aa9-e9ae-128986b496bb">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/noname_2.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                        dr n. med.                        Aleksandra Krasowska                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            psychiatrist, sexologist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="3bfb2b83-735a-3aa9-e9ae-128986b496bb" data-toggle="modal" data-target="#services-3bfb2b83-735a-3aa9-e9ae-128986b496bb" id="scroll_to-3bfb2b83-735a-3aa9-e9ae-128986b496bb" --data-prefetchschedule="true" data-service_duration="30" data-service_price="300.00" data-service_uuid="c89c28c5-3fc9-dbaf-3c06-8e3fb4b31629" data-service_name="Konsultacja psychiatryczna - kolejna wizyta - dorośli">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychiatryczna - kolejna wizyta - dorośli
+    <div>
+                    300 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            30            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        none    </strong>
+</div>
+
+<div class="card__hours">
+                
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=3bfb2b83-735a-3aa9-e9ae-128986b496bb&amp;language=en&amp;service=c89c28c5-3fc9-dbaf-3c06-8e3fb4b31629&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-3bfb2b83-735a-3aa9-e9ae-128986b496bb" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    dr n. med.                    Aleksandra                    Krasowska                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="3bfb2b83-735a-3aa9-e9ae-128986b496bb" id="services-3bfb2b83-735a-3aa9-e9ae-128986b496bb" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                            
+<div class="card" data-user="c6109b63-5035-b435-6099-4b37882d761e">
+    <div style="display: flex;justify-content: end">
+            </div>
+    <div class="card__content">
+        
+        <div class="card__header">
+            <div class="card__image" style="background-image:url(//assets.halodoctor.pl/upload/user_pages/d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a/expert_photo/o_1g8begvija4d1jgslg1nvqd96d.jpg)"></div>
+            <div class="card__top">
+                <h3 class="card__name">
+                    <span>
+                                                Ewa Jaguszewska                    </span>
+                </h3>
+                <div class="card__specialization">
+                                            psychotherapist                                    </div>
+                            </div>
+        </div>
+        
+        <div class="card__schedule">
+                            
+<div class="card__service card__service-change btn btn-default btn-block btn-card" data-user="c6109b63-5035-b435-6099-4b37882d761e" data-toggle="modal" data-target="#services-c6109b63-5035-b435-6099-4b37882d761e" id="scroll_to-c6109b63-5035-b435-6099-4b37882d761e" --data-prefetchschedule="true" data-service_duration="50" data-service_price="230.00" data-service_uuid="f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4" data-service_name="Konsultacja psychologiczna - dorośli">
+    <a href="javascript:;" class="text-info pull-right" style="margin-left: 10px;">
+        change    </a>
+
+    
+    Konsultacja psychologiczna - dorośli
+    <div>
+                    230 zł            &nbsp;·&nbsp;
+                <span class="text-muted">
+            50            min.        </span>
+    </div>
+</div>
+
+<div class="card__nearest">
+    Nearest available date:    <strong>
+        none    </strong>
+</div>
+
+<div class="card__hours">
+                
+    
+    <a class="text-info" href="https://app.medfile.pl/register/form/?uuid=c6109b63-5035-b435-6099-4b37882d761e&amp;language=en&amp;service=f7cd7262-4ab8-8cfc-8fa1-b3e7c90313b4&amp;facility=&amp;style=&amp;ppae=1&amp;noLogin=0&amp;s=0&amp;source=catalog">
+                    more hours        
+    </a>
+</div>
+                    </div>
+    </div><!-- card-content -->
+</div><!-- media -->
+
+<div id="bio-c6109b63-5035-b435-6099-4b37882d761e" class="modal bio-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                                        Ewa                    Jaguszewska                </h4>
+            </div>
+            <div class="modal-body">
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-user="c6109b63-5035-b435-6099-4b37882d761e" id="services-c6109b63-5035-b435-6099-4b37882d761e" class="modal service-modal fade" role="dialog" data-container="modal">
+    <div class="modal-dialog services-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                    Select a service                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="services"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                                    </div>
+                    </div>
+
+            Street Jana Nowaka-Jeziorańskiego
+51    / U6,
+
+<span class="whitespace_nowrap">03-982</span>
+Warszawa,
+
+    <a href="tel:+48221151687">
+        tel. no.: +48221151687,
+    </a>
+
+    <a href="mailto:recepcja@mentalpath.pl">
+        recepcja@mentalpath.pl    </a>
+    </div>
+
+<script>
+
+    var emailValidation = {
+        domains: ["gmail.com","onet.pl","interia.pl","msn.com","poczta.onet.eu","poczta.onet.pl","gazeta.pl","poczta.fm","hotmail.com","yahoo.pl","outlook.com","wp.pl","op.pl","o2.pl"],
+        timeout: null,
+        init: function () {
+            $('[name="email"]').keyup(function () {
+                if (emailValidation.timeout) {
+                    clearTimeout(emailValidation.timeout);
+                }
+
+                emailValidation.timeout = setTimeout(function (input) {
+                    emailValidation.validate(input);
+                }, 300, this);
+            });
+        },
+        accept: function (email) {
+            $('[name="email"]').val(email).trigger('blur').trigger('keyup');
+        },
+        validate: function (item) {
+            var $container = $(item).closest('.form-group');
+            var distance;
+            var domain;
+            var user;
+            var email;
+
+            $container.find('.tip').remove()
+
+            if (this.domains.length && item.value.length > 4 && item.value.indexOf('@') > -1) {
+                domain = item.value.split('@')[1].toLowerCase()
+                user = item.value.split('@')[0]
+
+                for (var k in this.domains) {
+                    if (domain[0] !== this.domains[k][0]) {
+                        continue
+                    }
+
+                    distance = levenshtein(domain, this.domains[k])
+                    if (distance > 0 && distance < 3) {
+                        email = user + '@' + this.domains[k]
+                        email = email.replace(/\s+/, '');
+                        $container.append(
+                            '<div class="help-block tip"><span class="text-muted">Did you mean</span> <span class="text-black">'
+                            + email + '?</span> <a onclick="emailValidation.accept(this.dataset.email)" data-email="' + email + '" class="text-info" href="javascript:;">Yes, replace</a></div>'
+                        );
+
+                        break;
+                    }
+                }
+            }
+        }
+    };
+
+    emailValidation.init();
+
+    var $connectto = '';
+    var tools = {
+        init: function (form_id, url, type) {
+            this.validation(form_id);
+            this.informParentWindow();
+
+            $(window).resize(this.informParentWindow());
+            if (this.isInIframe()) {
+                $('body').css('overflow', 'hidden');
+            }
+        },
+        validation: function (form_id) {
+            new FormValidate(form_id, {
+                onSubmit: function () {
+                    $('.btn-register')
+                        .off('click')
+                        .attr('disabled', true)
+                        .addClass('disabled')
+                },
+                onSubmitError: function () {
+                    var first_error = $('.has-error:first')
+                    var offset = first_error.offset().top - first_error.height() - 20
+                    tools.informParentWindow('scrollto', offset + 'px')
+                }
+            }, {
+                phone : {
+                    check: "phone",
+                    checkonblur: true,
+                    params: { outerDivDataField: 'phone_direction' },
+                },
+                empty: {
+                    check: 'empty',
+                    checkonblur: true,
+                    condition: function (item) {
+                        return $(item).is(':visible');
+                    }
+                },
+                pesel: {
+                    check: 'pesel',
+                    checkonblur: true,
+                    condition: function (item) {
+                        if (!$(item).is(':visible')) return false;
+                        if ($(item).data('required')) return true;
+                        return $(item).val() !== '';
+                    },
+                },
+                checked: {
+                    check: 'checked',
+                    checkonchange: true,
+                    params: {
+                        msg: 'Option is required'
+                    },
+                    'condition': function (item) {
+                        return $(item).is(':visible');
+                    }
+                },
+                email: {
+                    check: 'email',
+                    checkonblur: true,
+                    condition: function (item) {
+                        return $(item).is(':visible');
+                    }
+                },
+                selected: {
+                    'check': 'selected',
+                    'checkonblur': true
+                }
+            });
+        },
+        informParentWindow: function (action, data) {
+
+            action = action || 'resize'
+            data = data || {}
+
+            if (window.parent && action === 'resize') {
+                setTimeout(function () {
+                    height = data.height ? data.height : Math.max(document.body.scrollHeight, document.body.offsetHeight) + 80 + 'px'
+                    window.parent.postMessage({
+                        action: 'resize',
+                        height: height,
+                        connectto: $connectto
+                    }, '*');
+                }, 300)
+            }
+
+            if (window.parent && action === 'scrollto') {
+                setTimeout(function () {
+                    window.parent.postMessage({
+                        action: 'scrollto',
+                        offset: data,
+                        connectto: $connectto
+                    }, '*');
+                }, 300)
+            }
+
+            if (window.parent && action === 'getCoords') {
+                window.parent.postMessage({
+                    action: 'getCoords',
+                    connectto: $connectto
+                }, '*');
+            }
+
+            if (window.parent && action === 'scrollToIframe') {
+                window.parent.postMessage({
+                    action: 'scrollToIframe',
+                    connectto: $connectto
+                }, '*');
+            }
+
+            if (window.parent && action === 'hideUrl') {
+                window.parent.postMessage({
+                    action : 'hideUrl',
+                    connectto: $connectto,
+                    state : data.state
+                }, '*')
+            }
+
+            if (window.parent && action === 'clientEvent') {
+                window.parent.postMessage({
+                    slot: data.slot,
+                    service: data.service,
+                    user: data.user,
+                    action : 'clientEvent'
+                }, '*')
+            }
+
+            if (window.parent && action === 'event') {
+                window.parent.postMessage({
+                    data: data,
+                    action: 'event'
+                }, '*')
+            }
+
+        },
+        scrollTop: function () {
+            if (window.parent) {
+                setTimeout(function () {
+                    window.parent.postMessage({
+                        action: 'scrollTop',
+                        target: 'medfile-register-widget',
+                    }, '*');
+                }, 300)
+            }
+        },
+        isInIframe: function () {
+            try {
+                return window.self !== window.top;
+            } catch (e) {
+                return true;
+            }
+        },
+        formatChosenDate: function (value) {
+
+            var m = {
+                '01': 'Jan',
+                '02': 'Feb',
+                '03': 'Mar',
+                '04': 'Apr',
+                '05': 'May',
+                '06': 'Jun',
+                '07': 'Jul',
+                '08': 'Aug',
+                '09': 'Sep',
+                '10': 'Oct',
+                '11': 'Nov',
+                '12': 'Dec'
+            }
+
+            return [
+                '<b>' + value.substr(8, 2),
+                m[value.substr(5, 2)],
+                value.substr(0, 4),
+                '</b> at: <b>' + value.substr(11) + '</b>'
+            ].join(' ')
+        }
+    };
+
+    $(function () {
+        var y, top
+
+        window.addEventListener("message", function (event) {
+            if (event.data.action === 'setModalCoords') {
+                y = event.data.y
+                top = event.data.top
+
+                if (top === -50) {
+                    return;
+                }
+
+                if (y - top <= 0) {
+                    return
+                }
+
+                $('.bio-modal.in .modal-dialog, .service-modal.in .modal-dialog').css({
+                    top: (y - top + 50) + 'px'
+                })
+            }
+        })
+
+                $(document).on('shown.bs.modal', '.bio-modal, .service-modal', function () {
+
+            if (!tools.isInIframe()) {
+                return
+            }
+            tools.informParentWindow('getCoords', {})
+        })
+    })
+
+
+</script>
+
+<script>
+    var discountsCtrl = {
+        $discount_timeout: null,
+        $discount_code_input: null,
+        init: function () {
+            discountsCtrl.$discount_code_input = $('input[name="discount"]')
+
+            $(document).on('input', '[name="discount"]', function (event) {
+                event.preventDefault();
+                discountsCtrl.validateDiscount($(this));
+            });
+        },
+        validateDiscount: function (input) {
+            if (discountsCtrl.$discount_timeout) {
+                clearInterval(discountsCtrl.$discount_timeout);
+            }
+
+            discountsCtrl.$discount_timeout = setTimeout(function () {
+                discountsCtrl.getDiscount(input)
+            }, 400)
+        },
+        reset: function () {
+            discountsCtrl.$discount_code_input.val('');
+            discountsCtrl.clear()
+        },
+        clear: function () {
+            $('[data-message="discount_success"]').html('');
+            $('input[name="discount_uuid"]').val('');
+        },
+        getDiscount: function ($input) {
+            var chosen_service = $('input[name="chosen_service"]').val();
+            var user_uuid = $('input[name="user_uuid"]').val();
+            var chosen_user = $('input[name="chosen_user"]').val();
+            var chosen_office = $('input[name="chosen_office"]').val();
+            var chosen_facility = $('input[name="chosen_facility"]').val();
+            var facility = $('input[name="facility"]').val();
+            var code = $input.val();
+            var $div = $('[data-message="discount_success"]');
+
+            this.clear()
+
+            $.post('?page_action=e090bf21158a9__UmVnaXN0ZXJ8ZmluZF9kaXNjb3VudF9jb2Rl__6b64c618f84a58843b6fa8f68ea', {
+                office_id: chosen_office,
+                service_uuid: chosen_service,
+                user_uuid: chosen_user ? chosen_user : user_uuid,
+                facility_uuid: chosen_facility ? chosen_facility : facility,
+                code: code
+            }, function (response) {
+                var data = response.output;
+
+                if (response.error && code) {
+                    $div.html('<div class="text-danger text-center">' + response.error + '</div>');
+                } else if (data.discount) {
+                    // success
+                    $div.html('<div class="alert alert-success">' + data.description + '</div>');
+                    $('input[name="discount_uuid"]').val(data.discount.uuid_text);
+                }
+
+                $div.fadeIn();
+            }, 'json');
+        }
+    }
+
+    $(function () {
+        discountsCtrl.init()
+    })
+</script>
+<script>
+    var tools = Object.create(tools);
+    var hasPortal = false;
+
+    var source = "catalog"
+
+    $(function () {
+        var y, top
+
+        window.addEventListener("message", function (event) {
+
+            if (event.data.action === 'setModalCoords') {
+                y = event.data.y
+                top = event.data.topRect
+
+                if (y - top <= 0) {
+                    return
+                }
+
+                setTimeout(function (y, top) {
+                    $('.bio-modal, .services-modal').css({
+                        top: (y - (y + top)) + 50 + 'px'
+                    });
+                }, 100, y, top)
+
+            }
+        })
+
+                $(document).on('shown.bs.modal', function () {
+
+            if (!tools.isInIframe()) {
+                return
+            }
+
+            tools.informParentWindow('getCoords', {})
+        })
+    })
+
+    $(function () {
+        tools.informParentWindow();
+        tools.informParentWindow('hideUrl', {
+            state: 0,
+        })
+        $('[data-action="show_more"]').on('click', function (event) {
+            event.preventDefault();
+            var $this = $(this);
+            var services = $this.closest('[data-container="services"]').find('[data-service="hidden"]');
+
+            if (services.is(':hidden')) {
+                services.removeClass('hidden');
+            }
+            $this.remove();
+        })
+
+        $(document).on('change', '[name="specialization"],[name="type"],[name="facility"]', function () {
+            $(this).closest('form').submit()
+        })
+
+        $(document).on('hide.bs.modal', '[data-container="modal"]', function () {
+            tools.informParentWindow();
+        })
+    })
+
+    var renderSelect = function (selector, data, disabled) {
+
+        disabled = disabled || false
+
+        $(selector).select2({
+            data: data,
+            escapeMarkup: function (markup) {
+                return markup;
+            },
+            templateResult: function (data) {
+                return data.result;
+            },
+            templateSelection: function (data) {
+                return data.selection;
+            },
+            matcher: function (params, data) {
+
+                if ($.trim(params.term) === '') {
+                    return data;
+                }
+
+                if (typeof data.text === 'undefined') {
+                    return null;
+                }
+
+                if (data.result.toUpperCase().indexOf(params.term.toUpperCase()) > -1) {
+                    var modifiedData = $.extend({}, data, true);
+                    modifiedData.text += ' (matched)';
+                    return modifiedData;
+                }
+
+                return null;
+            }
+        })
+
+        if (disabled) {
+            $(selector).prop('disabled', true)
+            $(selector).next().find('.select2-selection__arrow').remove()
+        }
+    }
+
+    var specializations = [{"id":"Psycholog dzieci i m\u0142odzie\u017cy","selection":"<b>Psycholog dzieci i m\u0142odzie\u017cy<\/b>","result":"Psycholog dzieci i m\u0142odzie\u017cy"},{"id":"addiction therapist","selection":"<b>addiction therapist<\/b>","result":"addiction therapist"},{"id":"child psychiatrist","selection":"<b>child psychiatrist<\/b>","result":"child psychiatrist"},{"id":"child psychologist","selection":"<b>child psychologist<\/b>","result":"child psychologist"},{"id":"family psychotherapist","selection":"<b>family psychotherapist<\/b>","result":"family psychotherapist"},{"id":"family therapist","selection":"<b>family therapist<\/b>","result":"family therapist"},{"id":"neurologopedist","selection":"<b>neurologopedist<\/b>","result":"neurologopedist"},{"id":"pedagog","selection":"<b>pedagog<\/b>","result":"pedagog"},{"id":"psychiatrist","selection":"<b>psychiatrist<\/b>","result":"psychiatrist"},{"id":"psychologist","selection":"<b>psychologist<\/b>","result":"psychologist"},{"id":"psychoterapeuta m\u0142odzie\u017cy","selection":"<b>psychoterapeuta m\u0142odzie\u017cy<\/b>","result":"psychoterapeuta m\u0142odzie\u017cy"},{"id":"psychoterapia par","selection":"<b>psychoterapia par<\/b>","result":"psychoterapia par"},{"id":"psychotherapist","selection":"<b>psychotherapist<\/b>","result":"psychotherapist"},{"id":"sexologist","selection":"<b>sexologist<\/b>","result":"sexologist"},{"id":"special tutor","selection":"<b>special tutor<\/b>","result":"special tutor"},{"id":"speech therapist","selection":"<b>speech therapist<\/b>","result":"speech therapist"},{"id":"terapeuta SI","selection":"<b>terapeuta SI<\/b>","result":"terapeuta SI"}];
+
+    specializations.unshift({
+        'id': '',
+        'selection': '<b>All specialisations</b>',
+        'result': 'All'
+    })
+
+    renderSelect('[name="specialization"]', specializations)
+
+    
+    var types = [
+                {
+            id: 0,
+            selection: '<b>Online</b> or <b>in-office</b><b>consultation</b>',
+            result: 'Online or in-office consultation',
+            hide: '0'
+        },
+                        {
+            id: 'remote',
+            selection: 'Online consultation',
+            result: 'Online consultation',
+            hide: '0'
+        },
+                        {
+            id: 'non_remote',
+            selection: 'Visit <b>at the medical office</b>',
+            result: 'A visit at the medical office',
+            hide: '0'
+        }
+            ]
+
+    if (Number('0')) {
+        for (type in types) {
+            if (Number(types[type]['hide']) > 0) {
+                delete types[type];
+            }
+        }
+    }
+
+    renderSelect('[name="type"]', types, false)
+
+    
+    var facilities = [{"id":"ad1301a6-84cc-b954-ff4b-31c9d84e8ad4","selection":"<b>Goc\u0142aw<\/b>","result":"Goc\u0142aw"},{"id":"1ac3c774-8f77-aed7-f73f-9c10f2c0062f","selection":"<b>\u015ar\u00f3dmie\u015bcie<\/b>","result":"\u015ar\u00f3dmie\u015bcie"},{"id":"386c0153-ad3d-3688-1975-64c0d2755c6a","selection":"<b>PU\u0141AWSKA 12 LOK. 10<\/b>","result":"PU\u0141AWSKA 12 LOK. 10"}];
+
+    facilities.unshift({
+        id: 0,
+        selection: "<b>All facilities</b>",
+        result: "All facilities",
+    });
+
+    renderSelect('[name="facility"]', facilities, false);
+
+    $(document).on('click', '.text-toggle', function () {
+        $(this).closest('.card__bio').find('.text-toggled').toggleClass('hidden')
+    })
+
+    
+    $(function () {
+
+        $('.card__service-change').click(function () {
+            var modal = $('#services-' + $(this).data('user'))
+            var services = modal.find('.services')
+            services
+                .html('<div class="text-center pt-24"><i class="fas text-primary fa-3x fa-spinner fa-pulse"></i></div>')
+
+            $.get('https://app.medfile.pl/register/fetchServices/', {
+                uuid: $(this).data('user'),
+                facility: $('[name="facility"]').val(),
+                type: $('[name="type"]').val()
+            }).done(function (data) {
+
+                var items = data.output.items;
+
+                if (!Object.keys(items).length) {
+                    return services.html('<h4 class="text-center">No services</h4>')
+                }
+
+                var html = '<div class="list-group">'
+                for (var k in items) {
+                    var row = items[k];
+                    html += '<a data-dismiss="modal" href="javascript:;" data-service="' + row.uuid + '" class="list-group-item service-change">';
+
+                    html += '<span class="pull-right" style="padding-left: 10px;">';
+                    html += '<span class="text-muted service-duration">' + row.duration + ' min.</span>';
+                    html += ' &nbsp; <span class="service-price">' + row.price + ' </span>';                    html += ' &nbsp; <span class="btn btn-info btn-xs">select</span>';
+                    html += '</span>';
+                    html += '<span class="service-name">'
+                        + (row.remote ? ' <i class="fa-fw fas fa-phone text-info" title="An e-Visit"></i> ' : '')
+                        + ' '
+                        + row.name + '</span>';
+                    html += '</a>'
+                }
+
+                html += '</div>'
+                services.html(html)
+
+                tools.informParentWindow('getCoords', {});
+
+            }).fail(function () {
+                return services.html('<h4 class="text-center">No services</h4>')
+            })
+        })
+
+        $('[data-prefetchSchedule="true"]').each(function() {
+            changeService(
+                $(this).data('user'),
+                $(this).data('service_uuid'),
+                $(this).data('service_name'),
+                $(this).data('service_duration'),
+                $(this).data('service_price')
+            );
+        });
+
+        function changeService(user, service_uuid, service_name, service_duration, service_price) {
+
+            let card = $('.card[data-user="' + user + '"]');
+            let service = card.find('.card__service');
+
+            service
+                .html('<a href="#" class="text-info pull-right" style="margin-left: 10px;">change</a>'
+                    + service_name
+                    + '<div>'
+                    + service_price
+                    + '&nbsp;&middot;&nbsp;'
+                    + '<span class="text-muted">' + service_duration + '</span>'
+                    + '</div>'
+                );
+
+            $.get("https://app.medfile.pl/register/fetchSchedule/", {
+                uuid: user,
+                service: service_uuid,
+                type: $('[name="type"]').val(),
+                facility: $('[name="facility"]').val()
+            }).done(function (data) {
+                var response = data.output,
+                    $link = '',
+                    href = '';
+
+                card.find('.card__nearest')
+                    .html('Nearest available date: ' + '<b>' + response.label + '</b>')
+
+                card.find('.card__hours')
+                    .html('');
+
+                href = '/register/form/?uuid='
+                if (hasPortal) {
+                    href = '/rejestracja/register/?uuid='
+                }
+                for (var k in response.slots) {
+                    href += user
+                    href += '&service=' + service_uuid
+                    href += '&facility=' + ($('[name="facility"]').length
+                        ? $('[name="facility"]').val()
+                        : "")
+                    href += '&slot=' + response.date + ' ' + response.slots[k]
+                    href += "&style="
+
+                    if (source) {
+                        href += "&source=" + source
+                    }
+                    response.event.slot = response.date + ' ' + response.slots[k]
+
+                    $link = $('<a />')
+                        .addClass('card__hour')
+                        .prop('href', href)
+                        .data('event', response.event)
+                        .text(response.slots[k])
+
+                    card
+                        .find('.card__hours')
+                        .append($link)
+                }
+
+                href = '/register/form/?uuid='
+                if (hasPortal) {
+                    href = '/register/user/?uuid='
+                }
+                href += user
+                href += '&service=' + service_uuid
+                href += '&facility=' + $('[name="facility"]').val()
+                href += "&style="
+                if (source) {
+                    href += "&source=" + source
+                }
+
+                $link = $('<a />')
+                    .addClass('text-info')
+                    .prop('href', href)
+                    .text(' more hours');
+
+                card
+                    .find('.card__hours')
+                    .append($link)
+            })
+
+        }
+
+        $(document).on('click', '.service-change', function () {
+            var $modal = $(this).closest('.modal');
+            changeService(
+                $modal.data('user'),
+                $(this).data('service'),
+                $(this).find('.service-name').html(),
+                $(this).find('.service-price').text(),
+                $(this).find('.service-duration').text()
+            );
+        });
+    });
+
+    
+    $(document).on('click', '.card__hour', function () {
+        tools.informParentWindow('clientEvent', $(this).data('event'))
+    })
+
+</script>
+
+<script>
+    $(function () {
+        tools.informParentWindow('event', {
+            event: "catalog"
+        });
+    });
+</script>
+    <script src="/assets/js/bootstrap3.2.0.min.js?t=479"></script>
+    <script>
+        $('[data-plugin="select2"]').select2();
+        $().ready(function(){
+            $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+            $("textarea.autoresize").xautoresize();
+            $('[data-plugin="datepicker"]').datetimepicker({
+                'format': 'YYYY-MM-DD',
+                'useCurrent' : false
+            });
+        });
+    </script>
+
+            <script>
+            $(function () {
+                
+
+typeof gtag === 'function' && gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+                typeof gtag === 'function' && gtag(
+                    'config', 'G-VLYL4CMQKZ'
+                );                
+
+gtag('event','click', {
+                'event_category': 'Formularz rejestracji',
+                'event_label': '',
+                'value': 1
+            });            });
+        </script>
+    
+    
+
+</body></html>
+    </iframe>
+   
+
+      <!--
+        |============================
+        | ABOUT US
+        |============================
+      -->
+      <section class="about section">
+        <div class="about__flex container">
+          <ul class="about__list">
+            <li class="about__item">
+              <picture>
+                <!-- Desktop -->
+                <source media="(min-width: 1200px)" srcset="./images/about/desktop/about-1.jpg 1x, ./images/about/desktop/about-2@2x.jpg 2x">
+                <!-- Tablet -->
+                <source media="(min-width: 768px)" srcset="./images/about/tablet/about-1.jpg 1x, ./images/about/tablet/about-2@2x.jpg 2x">
+
+              <img class="about__img"
+                src="./images/about/tablet/about-1.jpg"
+                alt="beard trim"
+              />
+              </picture>
+                
+            </li>
+            <li class="about__item">
+              <picture>
+                <!-- Desktop -->
+                <source media="(min-width: 1200px)" srcset="./images/about/desktop/about-2.jpg 1x, ./images/about/desktop/about-2@2x.jpg 2x">
+                <!-- Tablet -->
+                <source media="(min-width: 768px)" srcset="./images/about/tablet/about-2.jpg 1x, ./images/about/tablet/about-2@2x.jpg 2x">
+
+              <img class="about__img"
+                  src="./images/about/tablet/about-2.jpg"
+                  alt="Men’s haircut" />
+
+              </picture>
+              
+            </li>
+          </ul>
+          <div class="about__group">
+            <p class="uppertitle" id="about">About</p>
+            <h2 class="section-title">Best Barbershop in your city</h2>
+            <p class="subtitle">
+              If you want to add more confidence to your image, you should
+              <span class="about__add-word">definitely</span> visit us.
+            </p>
+
+            <p class="about__desc">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button class="button button--white-theme" type="button">
+              Online-booking
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        |============================
+        | SERVISES and PRICES
+        |============================
+      -->
+
+      <section class="price section">
+        <div class="container">
+          <p class="uppertitle uppertitle--dark-theme" id="prices">
+            spend your time with the best masters
+          </p>
+          <h2 class="section-title section-title--dark-theme">Services and prices</h2>
+          <div class="price__group price-scene">
+            <ul class="price__list price__list--left">
+              <li class="price__item">
+                <span class="price__kind-service">Men’s haircut</span> <span class="price__kind-price">from 200 uah.</span>
+              </li>
+              <li class="price__item">
+                <span class="price__kind-service">Mustache trim</span> <span class="price__kind-price">from 200 uah.</span>
+              </li>
+              <li class="price__item">
+                <span class="price__kind-service">Beard trim</span> <span class="price__kind-price">from 300 uah.</span>
+              </li>
+              <li class="price__item">
+                <span class="price__kind-service">Straight razor shave</span> <span class="price__kind-price">from 300 uah.</span>
+              </li>
+            </ul>
+            <ul class="price__list price__list--right">
+              <li  class="price__item">
+                <span class="price__kind-service">Trainee’s haircut</span> <span class="price__kind-price">from 50 uah.</span>
+              </li>
+              <li  class="price__item">
+                <span class="price__kind-service">Haircut under the nozzle</span>
+                <span class="price__kind-price">from 200 uah.</span>
+              </li>
+              <li  class="price__item">
+                <span class="price__kind-service">Children’s haircut (0-12 y.o.)</span>
+                <span class="price__kind-price">from 300 uah.</span>
+              </li>
+              <li  class="price__item">
+                <span class="price__kind-service">Camouflage of gray hair</span> <span class="price__kind-price">from 200 uah.</span>
+              </li>
+            </ul>
+          </div>
+          <button class="button" type="button">Online-booking</button>
+        </div>
+      </section>
+
+      <!--
+        |============================
+        | BENEFITS
+        |============================
+      -->
+
+      <section class="benefits section">
+        <div class="benefits__flex container">
+          <ul class="benefits__flex-list">
+            <li class="benefits__flex-item">
+              <ul class="benefits__list">
+                <li class="benefits__item">
+                  <div class="benefits__quentity-group">
+                    <p class="benefits__quantity">600<sup>&#43;</sup></p>
+                  <p class="benefits__desc">Satisfied customers per day</p>
+                  </div>
+                </li>
+                <li class="benefits__item benefits__item--end">
+                  <div class="benefits__quentity-group"><p class="benefits__quantity">50<sup>&#43;</sup></p>
+                  <p class="benefits__desc">Awards for excellent service</p></div>
+                  
+                </li>
+              </ul>
+            </li>
+            <li class="benefits__flex-item">
+              <ul class="benefits__list">
+                <li class="benefits__item">
+                  <div class="benefits__quentity-group"><p class="benefits__quantity">20<sup>&#43;</sup></p>
+                  <p class="benefits__desc">Kyiv’s best barbers</p></div>
+                  
+                </li>
+                <li class="benefits__item benefits__item--end">
+                  <div class="benefits__quentity-group"><p class="benefits__quantity">100<sup>&#43;</sup></p>
+                  <p class="benefits__desc">Gifts for regular customers</p></div>
+                  
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="benefits__group">
+            <p class="uppertitle">old traditional school</p>
+            <h2 class="section-title section-title--white-theme">Why people come to us?</h2>
+            <p class="subtitle subtitle_benefits">
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+
+      <section class="team section">
+        <div class="container container--team-center">
+          <p class="uppertitle" id="team">
+            for true enjoyers of the atmosphere
+          </p>
+          <h2 class="section-title section-title--big-bottom section-title--white-theme">Our barbers</h2>
+          <ul class="team__list card-set">
+            <li class="team__item card-set__item">
+              <div class="team__card">
+                <div class="team__card-front">
+                  <img
+                  class="img"
+                  srcset="
+                  ./images/team/desktop/team-1.jpg 370w,
+                  ./images/team/mobile/team-1.jpg 418w,
+                  ./images/team/tablet/team-1.jpg 450w,
+                  ./images/team/desktop/team-1@2x.jpg 740w,
+                  ./images/team/mobile/team-1@2x.jpg 836w,
+                  ./images/team/tablet/team-1@2x.jpg 900w
+                  "
+                  src="./images/team/mobile/team-1.jpg"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+                  alt="John Smith"
+                 
+                />
+                </div>
+                <div class="team__title team__card-back">
+                  <h3 class="team__name">John Smith</h3>
+                  <p class="team__position">Extreme Barber</p>
+                  <ul class="socials">
+                    <li class="socials__item">
+                      <a
+                        class="socials__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <svg class="socials__icon" width="20" height="20">
+                          <use href="./images/social/icons-sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="socials__item">
+                      <a
+                        class="socials__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <svg class="socials__icon" width="20" height="20">
+                          <use href="./images/social/icons-sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="socials__item">
+                      <a
+                        class="socials__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <svg class="socials__icon" width="20" height="20">
+                          <use href="./images/social/icons-sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="socials__item">
+                      <a
+                        class="socials__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <svg class="socials__icon" width="20" height="20">
+                          <use href="./images/social/icons-sprite.svg#linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </li>
+            <li class="team__item card-set__item">
+              <div class="team__card">
+                <div class="team__card-front">
+                  <img
+                  class="img"
+                  srcset="
+                  ./images/team/desktop/team-2.jpg 370w,
+                  ./images/team/mobile/team-2.jpg 418w,
+                  ./images/team/tablet/team-2.jpg 450w,
+                  ./images/team/desktop/team-2@2x.jpg 740w,
+                  ./images/team/mobile/team-2@2x.jpg 836w,
+                  ./images/team/tablet/team-2@2x.jpg 900w
+                  "
+                  src="./images/team/mobile/team-2.jpg"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+                  alt="Michele Doe"
+                />
+                </div>
+                <div class="team__title team__card-back">
+                  <h3 class="team__name">Michele Doe</h3>
+                  <p class="team__position">Extreme Barber</p>
+                  <ul class="socials">
+                    <li class="socials__item">
+                      <a
+                        class="socials__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <svg class="socials__icon" width="20" height="20">
+                          <use href="./images/social/icons-sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="socials__item">
+                      <a
+                        class="socials__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <svg class="socials__icon" width="20" height="20">
+                          <use href="./images/social/icons-sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="socials__item">
+                      <a
+                        class="socials__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <svg class="socials__icon" width="20" height="20">
+                          <use href="./images/social/icons-sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="socials__item">
+                      <a
+                        class="socials__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <svg class="socials__icon" width="20" height="20">
+                          <use href="./images/social/icons-sprite.svg#linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </li>
+            <li class="team__item card-set__item">
+              <div class="team__card">
+                <div class="team__card-front">
+                  <img
+                  class="img"
+                  srcset="
+                  ./images/team/desktop/team-3.jpg 370w,
+                  ./images/team/mobile/team-3.jpg 418w,
+                  ./images/team/tablet/team-3.jpg 450w,
+                  ./images/team/desktop/team-3@2x.jpg 740w,
+                  ./images/team/mobile/team-3@2x.jpg 836w,
+                  ./images/team/tablet/team-3@2x.jpg 900w
+                  "
+                  src="./images/team/mobile/team-3.jpg"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+                  alt="Alan Black"
+                />
+                </div>
+                <div class="team__title team__card-back">
+                  <h3 class="team__name">Alan Black</h3>
+                  <p class="team__position">Extreme Barber</p>
+                  <ul class="socials">
+                    <li class="socials__item">
+                      <a
+                        class="socials__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <svg class="socials__icon" width="20" height="20">
+                          <use href="./images/social/icons-sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="socials__item">
+                      <a
+                        class="socials__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <svg class="socials__icon" width="20" height="20">
+                          <use href="./images/social/icons-sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="socials__item">
+                      <a
+                        class="socials__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <svg class="socials__icon" width="20" height="20">
+                          <use href="./images/social/icons-sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="socials__item">
+                      <a
+                        class="socials__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <svg class="socials__icon" width="20" height="20">
+                          <use href="./images/social/icons-sprite.svg#linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+
+      <section class="galery section">
+        <div class="container">
+          <p class="uppertitle uppertitle--big-bottom">
+            in Latin, "barba" means "beard"
+          </p>
+          <h2 class="section-title visually-hidden" >Our gallery</h2>
+          <ul class="galery-list card-set">
+
+            <li class="galery__item card-set__item card-set__item--4 card-set__item--2" >
+<!-- data-aos="fade-right" data-aos-duration="3000" data-aos-delay="0" -->
+              <img
+                class="img"
+                
+                srcset="./images/gallery/desktop/gallery-img-1.jpg 270w,
+                ./images/gallery/tablet/gallery-1.jpg 330w,
+                ./images/gallery/mobile/gallery-img-1.jpg 418w,
+                ./images/gallery/desktop/gallery-img-1@2x.jpg 540w,
+                ./images/gallery/tablet/gallery-1@2x.jpg 660w,
+                ./images/gallery/mobile/gallery-img-1@2x.jpg 836w"
+               src="./images/gallery/mobile/gallery-img-1.jp"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px,  100vw"
+                
+               alt="barber cuts a man"
+              />
+            </li>
+
+            <li class="galery__item card-set__item card-set__item--4" >
+              <img
+                class="img"
+                
+                srcset="./images/gallery/desktop/gallery-img-2.jpg 270w,
+                ./images/gallery/tablet/gallery-2.jpg 330w,
+                ./images/gallery/mobile/gallery-img-2.jpg 418w,
+                ./images/gallery/desktop/gallery-img-2@2x.jpg 540w,
+                ./images/gallery/tablet/gallery-2@2x.jpg 660w,
+                ./images/gallery/mobile/gallery-img-2@2x.jpg 836w"
+               src="./images/gallery/mobile/gallery-img-2.jp"
+               sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px,  100vw"
+                alt="barber shaves a man"
+                
+              />              
+            </li>
+
+            <li class="galery__item card-set__item card-set__item--4" >
+              <img
+                class="img"
+                
+                srcset="./images/gallery/desktop/gallery-img-3.jpg 270w,
+                ./images/gallery/tablet/gallery-3.jpg 330w,
+                ./images/gallery/mobile/gallery-img-3.jpg 418w,
+                ./images/gallery/desktop/gallery-img-3@2x.jpg 540w,
+                ./images/gallery/tablet/gallery-3@2x.jpg 660w,
+                ./images/gallery/mobile/gallery-img-3@2x.jpg 836w"
+               src="./images/gallery/mobile/gallery-img-3.jp"
+               sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px,  100vw"
+                alt="barber wipes man's face with a towel"
+               
+              />
+            </li>
+            
+            <li class="galery__item card-set__item card-set__item--4" >
+              <img
+                class="img"
+                
+                srcset="./images/gallery/desktop/gallery-img-4.jpg 270w,
+                ./images/gallery/tablet/gallery-4.jpg 330w,
+                ./images/gallery/mobile/gallery-img-4.jpg 418w,
+                ./images/gallery/desktop/gallery-img-4@2x.jpg 540w,
+                ./images/gallery/tablet/gallery-4@2x.jpg 660w,
+                ./images/gallery/mobile/gallery-img-4@2x.jpg 836w"
+               src="./images/gallery/mobile/gallery-img-4.jp"
+               sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px,  100vw"
+                alt="barber cuts a man"
+               
+              />
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- FORM for ONLINE-BOOKING  AND   CONTACTS -->
+
+            <div class="booking-flex">
+<form class="form section booking-flex__item">   
+  <div class="container container--booking form__flex">
+    <h2 class="section-title section-title--dark-theme section-title--bottom-null" id="contacts">Online-booking</h2>    
+
+              <div class="form__group">
+                <div class="form__field">
+                  <input class="form__text" type="text" id="name" name="name" required>
+                <label class="form__label-text" for="name">Name*</label>
+                </div>
+
+                <div class="form__field">
+                  <input class="form__text" type="tel" name="phone" id="tel" required>
+                <label class="form__label-text" for="tel">phone*</label>
+                </div>
+              </div>
+
+              <div class="form__field-possition">
+                <textarea class="form__comment" name="comment" id="comment" rows="2" placeholder=" "></textarea>
+              <label class="form__label-comment" for="comment">Message</label>
+              </div>
+
+              
+              
+                <p class="message-title">Your favorite messanger:</p>
+                <div class="form__checkbox">
+                
+                  <div class="form__field-messager">
+                    <input class="form__input-checkbox" type="checkbox" name="favorite_messanger" id="viber" value="viber">
+                    <span class="form__icon-checkbox"></span>
+                    <label class="form__label-checkbox" for="viber">Viber</label>
+                  </div>
+
+                  <div class="form__field-messager">
+                    <input class="form__input-checkbox" type="checkbox" name="favorite_messanger" id="telegram" value="telegram" checked>
+                    <span class="form__icon-checkbox"></span>
+                    <label class="form__label-checkbox" for="telegram">Telegram</label>
+                  </div>
+
+                  <div class="form__field-messager">
+                    <input class="form__input-checkbox" type="checkbox" name="favorite_messanger" id="watsapp" value="watsapp">
+                    <span class="form__icon-checkbox"></span>
+                    <label class="form__label-checkbox" for="watsapp">WatsApp</label>
+                  </div>
+
+                  <div class="form__field-messager">
+                    <input class="form__input-checkbox" type="checkbox" name="favorite_messanger" id="signal" value="signal" disabled>
+                    <span class="form__icon-checkbox"></span>
+                    <label class="form__label-checkbox" for="signal">Signal</label>
+                  </div>
+                               
+              </div>
+
+            <button class="button" type="submit">Send</button>
+          
+  </div>
+              </form>
+
+      <section class="contacts section booking-flex__item">
+           <div class="container container--booking">
+             <h2 class="section-title section-title--dark-theme section-title--center" id="contacts">Contacts</h2>
+            <div class="address-flex">
+              <address class="contacts__address">
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__item--bottom">
+                  <svg class="contacts__icon" width="24" height="24">
+                    <use href="./images/svg-sprite.svg#icon-map-pin"></use>
+                  </svg>
+                  <a
+                    class="contacts__link contacts__link--adress-mobile"
+                    href="https://goo.gl/maps/wuicScCzC82bpD2R9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >st. Vasilkovaya, 7A Kiev, 08132</a
+                  >
+                </li>
+                <li class="contacts__item contacts__item--center">
+                  <svg class="contacts__icon" width="24" height="24">
+                    <use href="./images/svg-sprite.svg#icon-phone"></use>
+                  </svg>
+                  <a class="contacts__link" href="tel:+380441111111">+38 044 111 11 11</a>
+                </li>
+                <li class="contacts__item contacts__item--center">
+                  <svg class="contacts__icon" width="24" height="24">
+                    <use href="./images/svg-sprite.svg#icon-mail"></use>
+                  </svg>
+                  <a class="contacts__link contacts__link--underline" href="mailto:barbershop@email.com"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <div class="contacts__group">
+              <p class="uppertitle uppertitle--white">working hours</p>
+              <p class="contacts__schedule">
+                Every day from <time datetime="09:00">9:00</time> to
+                <time datetime="22:00">22:00</time>
+              </p>
+            </div>
+            </div>
+           </div>
+          </section>
+            </div>
+
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer__flex">
+          <p class="copyright">&#169; Copyright 2020</p>
+          <ul class="social-list">
+            <li class="social-list__item social-list__item--flex-start">
+              <a
+                class="social-list__link social-list__link--padding-null"
+                href="https://Instagram.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Instagram</a
+              >
+            </li>
+            <li class="social-list__item social-list__item--flex-start">
+              <a
+                class="social-list__link social-list__link--padding-null"
+                href="https://Youtube.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+
+<!--
+        |============================
+        | MODAL WINDOW
+        |============================
+      -->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <form class="modal-form">
+            <strong class="modal-form__title">Leave your details, we will call you back</strong>
+            <label class="modal-form__field">
+              <input class="modal-form__input" type="text" name="name" required placeholder="Alex Gray">
+              <span class="modal-form__label">Name</span>
+              <svg class="modal-form__icon" width="22" height="22">
+                <use class="icon-unchecked" href="./images/svg-sprite.svg#user-plus"></use>
+                <use class="icon-checked" href="./images/svg-sprite.svg#user-check"></use>
+              </svg>
+            </label>
+
+            <label class="modal-form__field">
+              <input class="modal-form__input" type="tel" name="tel" placeholder="+380 99 999 99 99">
+              <span class="modal-form__label">Phone</span>
+              <svg class="modal-form__icon" width="22" height="22">
+                <use class="icon-checked icon-checked--visible" href="./images/svg-sprite.svg#mobile"></use>
+              </svg>
+            </label>
+
+            <label class="modal-form__field">
+              <input class="modal-form__input" type="email" name="email" required placeholder="exemple@mail.com">
+              <span class="modal-form__label">E-mail</span>
+              <svg class="modal-form__icon" width="22" height="22">
+                <use class="icon-checked icon-checked--visible" href="./images/svg-sprite.svg#mail"></use>
+              </svg>
+            </label>
+
+            <label class="modal-form__field">
+              <span class="modal-form__textarea">Message</span>
+              <textarea name="message" rows="5" class="modal-form__message" placeholder="Enter your message"></textarea>
+            </label>
+
+            <label class="modal-form__agreement">
+              <input class="modal-form__checkbox" type="checkbox" name="checkbox">
+              <svg class="modal-form__icon--check" width="18" height="18">
+                <use class="checkbox-unchecked" href="./images/svg-sprite.svg#vector"></use>
+                <use class="checkbox-checked" href="./images/svg-sprite.svg#icon-check"></use>
+              </svg>
+              <span class="modal-form__agreement-text">I agree with the mailing and accept <a class="modal-form__link" href="">Agreement</a> </span>
+            </label>
+          </form>
+         <button class="button button--white-theme button--center" type="submit" >SEND</button>
+         <button class="btn-close" type="button" data-modal-close><svg class="btn-close__icon" width="22" height="22">
+                <use href="./images/svg-sprite.svg#close"></use>
+              </svg></button>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!--
+      |============================
+      | add JS
+      |============================
+    -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+<script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
+
+  </body>
+</html>

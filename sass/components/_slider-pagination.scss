@@ -1,0 +1,30 @@
+@media screen and (max-width: 767px) {
+  .slider-pagination {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider-pagination {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+  }
+
+  .slider-pagination__item {
+    margin-left: auto;
+    width: 8px;
+    height: 2px;
+    background-color: $secondary-text-color-0_6;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  .slider-pagination__item--active {
+    width: 18px;
+    height: 2px;
+    background-color: $white-text-color;
+  }
+}

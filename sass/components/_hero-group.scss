@@ -1,0 +1,35 @@
+.hero-group {
+  padding-top: 208px;
+  padding-bottom: 209px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 120px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 272px;
+    padding-bottom: 206px;
+    padding-left: 100px;
+
+    min-width: 510px;
+    flex-grow: 1;
+
+    background-color: #191c2626;
+  }
+}
+
+.hero-group__title {
+  margin-bottom: 20px;
+
+  color: $white-text-color;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: calc(56 / 48);
+  letter-spacing: 0.05em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 72px;
+    line-height: 1.18;
+  }
+}

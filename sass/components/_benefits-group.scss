@@ -1,0 +1,10 @@
+.benefits__group {
+  @media screen and (min-width: 768px) {
+    width: 500px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 500px;
+    margin-left: 130px;
+  }
+}

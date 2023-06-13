@@ -1,0 +1,8 @@
+// .logo {}
+
+.logo-icon {
+  fill: $white-text-color;
+  @media screen and (min-width: 768px) {
+    fill: #000;
+  }
+}

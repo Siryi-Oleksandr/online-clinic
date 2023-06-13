@@ -1,0 +1,27 @@
+.card-set {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $indent;
+  }
+}
+
+.card-set__item {
+  // @media screen and (min-width: 768px) {
+  //   &--2 {
+  //     $items: 2;
+  //     flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+  //   }
+  // }
+
+  @media screen and (min-width: 1200px) {
+    $items: 3;
+    flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+
+    &--4 {
+      $items: 4;
+      flex-basis: calc((100% - #{$indent} * (#{$items} - 1)) / #{$items});
+    }
+  }
+}

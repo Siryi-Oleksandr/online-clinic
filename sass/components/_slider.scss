@@ -1,0 +1,48 @@
+@media screen and (max-width: 767px) {
+  .slider {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .slider__item {
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
+
+  .slider__btn {
+    width: 68px;
+    padding-bottom: 8px;
+
+    border: none;
+    border-bottom: 1px solid $white-text-color;
+    background-color: transparent;
+
+    color: $white-text-color;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+
+    &:hover,
+    &:focus {
+      color: $secondary-text-color-0_6;
+      cursor: pointer;
+    }
+  }
+
+  .slider__btn--disabled {
+    color: rgba(157, 164, 189, 0.6);
+    border-bottom-color: rgba(157, 164, 189, 0.6);
+  }
+}
