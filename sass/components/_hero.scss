@@ -4,12 +4,22 @@
   background-position: center;
 
   @media screen and (max-width: 767px) {
-    background-image: url(../images/background/mobile/hero-bg-sm-@1x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background/desktop/med-hero.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/background/mobile/hero-bg-sm-@2x.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background/desktop/med-hero.jpg);
     }
   }
 }
@@ -35,7 +45,12 @@
   }
   // Tablet screen
   @media screen and (min-width: 768px) {
-    background-image: url(../images/background/tablet/hero-bg-md-@1x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background/desktop/med-hero.jpg);
     background-size: cover;
     margin-right: -15px;
     padding-right: 15px;
@@ -43,17 +58,32 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/background/tablet/hero-bg-md-@2x.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background/desktop/med-hero.jpg);
     }
   }
   // Desktop screen
   @media screen and (min-width: 769px) {
-    background-image: url(../images/background/desktop/hero-bg-lg-@1x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background/desktop/med-hero.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/background/desktop/hero-bg-lg-@2x.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background/desktop/med-hero.jpg);
     }
   }
 }

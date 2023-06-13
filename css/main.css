@@ -536,6 +536,11 @@ body {
           align-items: center;
 }
 
+.header__logo {
+  width: 60px;
+  height: 40px;
+}
+
 .logo-icon {
   fill: #ffffff;
 }
@@ -707,20 +712,8 @@ body {
 }
 
 .section {
-  padding-top: 84px;
-  padding-bottom: 84px;
-}
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 130px;
-    padding-bottom: 130px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-hero {
@@ -730,12 +723,14 @@ body {
 }
 @media screen and (max-width: 767px) {
   .section-hero {
-    background-image: url(../images/background/mobile/hero-bg-sm-@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/desktop/med-hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/desktop/med-hero.jpg);
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: url(../images/background/mobile/hero-bg-sm-@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/desktop/med-hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/desktop/med-hero.jpg);
   }
 }
 
@@ -765,7 +760,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero-right-side {
-    background-image: url(../images/background/tablet/hero-bg-md-@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/desktop/med-hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/desktop/med-hero.jpg);
     background-size: cover;
     margin-right: -15px;
     padding-right: 15px;
@@ -773,17 +769,20 @@ body {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-right-side {
-    background-image: url(../images/background/tablet/hero-bg-md-@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/desktop/med-hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/desktop/med-hero.jpg);
   }
 }
 @media screen and (min-width: 769px) {
   .hero-right-side {
-    background-image: url(../images/background/desktop/hero-bg-lg-@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/desktop/med-hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/desktop/med-hero.jpg);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero-right-side {
-    background-image: url(../images/background/desktop/hero-bg-lg-@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/desktop/med-hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/desktop/med-hero.jpg);
   }
 }
 
