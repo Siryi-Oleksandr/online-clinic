@@ -26,10 +26,10 @@
 .uppertitle--dark-theme {
   @extend .uppertitle;
 
-  color: $secondary-text-color-0_6;
+  color: $white-text-color;
 
   &::before {
-    background-color: $secondary-text-color-0_6;
+    background-color: $white-text-color;
   }
 }
 
@@ -39,13 +39,12 @@
   color: $white-text-color;
 
   &::before {
-      background-color: $secondary-text-color-0_6;
-    }
+    background-color: $secondary-text-color-0_6;
+  }
 }
 
 .uppertitle--big-bottom {
   @extend .uppertitle;
 
   margin-bottom: 44px;
-  }
-
+}

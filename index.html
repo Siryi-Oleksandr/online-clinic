@@ -64,11 +64,11 @@
         
           <nav class="nav">
           <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#team">Specialists</a></li>
             <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
             <li class="nav__item">
               <a class="nav__link" href="#prices">Services and prices</a>
             </li>
-            <li class="nav__item"><a class="nav__link" href="#team">Specialists</a></li>
             <li class="nav__item">
               <a class="nav__link" href="#contacts">Contacts</a>
             </li>
@@ -104,11 +104,11 @@
           </button>
           <nav class="mobile-menu">
           <ul class="mobile-menu__list">
+              <li class="mobile-menu__item"><a class="nav__link" href="#team">Specialists</a></li>
             <li class="mobile-menu__item"><a class="nav__link" href="#about">About</a></li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link" href="#prices">Services and prices</a>
             </li>
-            <li class="mobile-menu__item"><a class="nav__link" href="#team">Specialists</a></li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link" href="#contacts">Contacts</a>
             </li>
@@ -182,30 +182,24 @@
               </p>
           </div>
 
-          <ul class="slider">
-            <li class="slider__item">
-              <button class="slider__btn slider__btn--disabled" type="button">Back</button>
-            </li>
-            <li class="slider__item">
-              <button class="slider__btn" type="button">Forward</button>
-            </li>
-          </ul>
-          <ul class="slider-pagination">
-            <li class="slider-pagination__item slider-pagination__item--active"></li>
-            <li class="slider-pagination__item"></li>
-            <li class="slider-pagination__item"></li>
-          </ul>
+          
           </div>
         </div>
       </section>
 
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
 
-    <iframe src="https://app.medfile.pl/register/catalog/?uuid=d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a" width="100%" height="4587px" style="border: 0px; width: 100%; transition: all 0.3s linear 0s;">
+      <!-- Vidget section -->
+
+   <section class="section-vidget">
+
+    <div class="container container--team-center">
+
+<p class="uppertitle specialists" id="team">
+            the best professionals for you
+          </p>
+          <h2 class="section-title section-title--big-bottom section-title--white-theme specialists">Our specialists</h2>
+
+     <iframe class="vidget" src="https://app.medfile.pl/register/catalog/?uuid=d1a0de8a-e846-e75a-c7fb-c3ec77e0d84a" width="100%" height="4587px" style="border: 0px; width: 100%; transition: all 0.3s linear 0s;">
     <html lang="pl"><head>
     <meta charset="utf-8">
     <title>Medfile - EDM - Elektroniczna dokumentacja medyczna</title>
@@ -3239,6 +3233,10 @@ gtag('event','click', {
 
 </body></html>
     </iframe>
+    </div>
+
+    
+   </section>
    
 
       <!--
@@ -3250,48 +3248,37 @@ gtag('event','click', {
         <div class="about__flex container">
           <ul class="about__list">
             <li class="about__item">
-              <picture>
-                <!-- Desktop -->
-                <source media="(min-width: 1200px)" srcset="./images/about/desktop/about-1.jpg 1x, ./images/about/desktop/about-2@2x.jpg 2x">
-                <!-- Tablet -->
-                <source media="(min-width: 768px)" srcset="./images/about/tablet/about-1.jpg 1x, ./images/about/tablet/about-2@2x.jpg 2x">
-
-              <img class="about__img"
-                src="./images/about/tablet/about-1.jpg"
-                alt="beard trim"
+              <div class="about__img">
+               
+              <img 
+                src="./images/about/desktop/med-care.jpg"
+                alt="care"
               />
-              </picture>
+              </div>
                 
             </li>
             <li class="about__item">
-              <picture>
-                <!-- Desktop -->
-                <source media="(min-width: 1200px)" srcset="./images/about/desktop/about-2.jpg 1x, ./images/about/desktop/about-2@2x.jpg 2x">
-                <!-- Tablet -->
-                <source media="(min-width: 768px)" srcset="./images/about/tablet/about-2.jpg 1x, ./images/about/tablet/about-2@2x.jpg 2x">
+              <div class="about__img">
+               
+              <img 
+                  src="./images/about/desktop/med-care-2.jpg"
+                  alt="care" />
 
-              <img class="about__img"
-                  src="./images/about/tablet/about-2.jpg"
-                  alt="Men’s haircut" />
-
-              </picture>
+              </div>
               
             </li>
           </ul>
           <div class="about__group">
             <p class="uppertitle" id="about">About</p>
-            <h2 class="section-title">Best Barbershop in your city</h2>
+            <h2 class="section-title">Best Online Clinic in your city</h2>
             <p class="subtitle">
-              If you want to add more confidence to your image, you should
-              <span class="about__add-word">definitely</span> visit us.
+              Our clinic is dedicated to providing top-quality healthcare services with a patient-centered approach.
+             
             </p>
 
             <p class="about__desc">
-              We are a team that never stops at what has been achieved and are
-              thirsty for changes. And when you fall into the hands of our
-              master, you will never be the same again. We are a team that is
-              always "on the same wave" with clients. Therefore, we are always
-              ready to improve everyone who comes to us!
+              With a team of highly skilled and experienced medical professionals, we strive to deliver comprehensive medical care and ensure the well-being of our patients.
+At our clinic, we leverage advanced technology and state-of-the-art facilities to offer accurate diagnoses, efficient treatments, and exceptional medical outcomes.
             </p>
             <button class="button button--white-theme" type="button">
               Online-booking
@@ -3309,7 +3296,7 @@ gtag('event','click', {
       <section class="price section">
         <div class="container">
           <p class="uppertitle uppertitle--dark-theme" id="prices">
-            spend your time with the best masters
+            We deliver the highest standard of care to our valued patients
           </p>
           <h2 class="section-title section-title--dark-theme">Services and prices</h2>
           <div class="price__group price-scene">
@@ -3395,337 +3382,6 @@ gtag('event','click', {
               feel 1 time than read 10 times.
             </p>
           </div>
-        </div>
-      </section>
-
-      <!-- TEAM -->
-
-      <section class="team section">
-        <div class="container container--team-center">
-          <p class="uppertitle" id="team">
-            for true enjoyers of the atmosphere
-          </p>
-          <h2 class="section-title section-title--big-bottom section-title--white-theme">Our barbers</h2>
-          <ul class="team__list card-set">
-            <li class="team__item card-set__item">
-              <div class="team__card">
-                <div class="team__card-front">
-                  <img
-                  class="img"
-                  srcset="
-                  ./images/team/desktop/team-1.jpg 370w,
-                  ./images/team/mobile/team-1.jpg 418w,
-                  ./images/team/tablet/team-1.jpg 450w,
-                  ./images/team/desktop/team-1@2x.jpg 740w,
-                  ./images/team/mobile/team-1@2x.jpg 836w,
-                  ./images/team/tablet/team-1@2x.jpg 900w
-                  "
-                  src="./images/team/mobile/team-1.jpg"
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
-                  alt="John Smith"
-                 
-                />
-                </div>
-                <div class="team__title team__card-back">
-                  <h3 class="team__name">John Smith</h3>
-                  <p class="team__position">Extreme Barber</p>
-                  <ul class="socials">
-                    <li class="socials__item">
-                      <a
-                        class="socials__link"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <svg class="socials__icon" width="20" height="20">
-                          <use href="./images/social/icons-sprite.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-
-                    <li class="socials__item">
-                      <a
-                        class="socials__link"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <svg class="socials__icon" width="20" height="20">
-                          <use href="./images/social/icons-sprite.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-
-                    <li class="socials__item">
-                      <a
-                        class="socials__link"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <svg class="socials__icon" width="20" height="20">
-                          <use href="./images/social/icons-sprite.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-
-                    <li class="socials__item">
-                      <a
-                        class="socials__link"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <svg class="socials__icon" width="20" height="20">
-                          <use href="./images/social/icons-sprite.svg#linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                  
-                </div>
-              </div>
-            </li>
-            <li class="team__item card-set__item">
-              <div class="team__card">
-                <div class="team__card-front">
-                  <img
-                  class="img"
-                  srcset="
-                  ./images/team/desktop/team-2.jpg 370w,
-                  ./images/team/mobile/team-2.jpg 418w,
-                  ./images/team/tablet/team-2.jpg 450w,
-                  ./images/team/desktop/team-2@2x.jpg 740w,
-                  ./images/team/mobile/team-2@2x.jpg 836w,
-                  ./images/team/tablet/team-2@2x.jpg 900w
-                  "
-                  src="./images/team/mobile/team-2.jpg"
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
-                  alt="Michele Doe"
-                />
-                </div>
-                <div class="team__title team__card-back">
-                  <h3 class="team__name">Michele Doe</h3>
-                  <p class="team__position">Extreme Barber</p>
-                  <ul class="socials">
-                    <li class="socials__item">
-                      <a
-                        class="socials__link"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <svg class="socials__icon" width="20" height="20">
-                          <use href="./images/social/icons-sprite.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-
-                    <li class="socials__item">
-                      <a
-                        class="socials__link"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <svg class="socials__icon" width="20" height="20">
-                          <use href="./images/social/icons-sprite.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-
-                    <li class="socials__item">
-                      <a
-                        class="socials__link"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <svg class="socials__icon" width="20" height="20">
-                          <use href="./images/social/icons-sprite.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-
-                    <li class="socials__item">
-                      <a
-                        class="socials__link"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <svg class="socials__icon" width="20" height="20">
-                          <use href="./images/social/icons-sprite.svg#linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                  
-                </div>
-              </div>
-            </li>
-            <li class="team__item card-set__item">
-              <div class="team__card">
-                <div class="team__card-front">
-                  <img
-                  class="img"
-                  srcset="
-                  ./images/team/desktop/team-3.jpg 370w,
-                  ./images/team/mobile/team-3.jpg 418w,
-                  ./images/team/tablet/team-3.jpg 450w,
-                  ./images/team/desktop/team-3@2x.jpg 740w,
-                  ./images/team/mobile/team-3@2x.jpg 836w,
-                  ./images/team/tablet/team-3@2x.jpg 900w
-                  "
-                  src="./images/team/mobile/team-3.jpg"
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
-                  alt="Alan Black"
-                />
-                </div>
-                <div class="team__title team__card-back">
-                  <h3 class="team__name">Alan Black</h3>
-                  <p class="team__position">Extreme Barber</p>
-                  <ul class="socials">
-                    <li class="socials__item">
-                      <a
-                        class="socials__link"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <svg class="socials__icon" width="20" height="20">
-                          <use href="./images/social/icons-sprite.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-
-                    <li class="socials__item">
-                      <a
-                        class="socials__link"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <svg class="socials__icon" width="20" height="20">
-                          <use href="./images/social/icons-sprite.svg#twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-
-                    <li class="socials__item">
-                      <a
-                        class="socials__link"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <svg class="socials__icon" width="20" height="20">
-                          <use href="./images/social/icons-sprite.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-
-                    <li class="socials__item">
-                      <a
-                        class="socials__link"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <svg class="socials__icon" width="20" height="20">
-                          <use href="./images/social/icons-sprite.svg#linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                  
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- GALLERY -->
-
-      <section class="galery section">
-        <div class="container">
-          <p class="uppertitle uppertitle--big-bottom">
-            in Latin, "barba" means "beard"
-          </p>
-          <h2 class="section-title visually-hidden" >Our gallery</h2>
-          <ul class="galery-list card-set">
-
-            <li class="galery__item card-set__item card-set__item--4 card-set__item--2" >
-<!-- data-aos="fade-right" data-aos-duration="3000" data-aos-delay="0" -->
-              <img
-                class="img"
-                
-                srcset="./images/gallery/desktop/gallery-img-1.jpg 270w,
-                ./images/gallery/tablet/gallery-1.jpg 330w,
-                ./images/gallery/mobile/gallery-img-1.jpg 418w,
-                ./images/gallery/desktop/gallery-img-1@2x.jpg 540w,
-                ./images/gallery/tablet/gallery-1@2x.jpg 660w,
-                ./images/gallery/mobile/gallery-img-1@2x.jpg 836w"
-               src="./images/gallery/mobile/gallery-img-1.jp"
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px,  100vw"
-                
-               alt="barber cuts a man"
-              />
-            </li>
-
-            <li class="galery__item card-set__item card-set__item--4" >
-              <img
-                class="img"
-                
-                srcset="./images/gallery/desktop/gallery-img-2.jpg 270w,
-                ./images/gallery/tablet/gallery-2.jpg 330w,
-                ./images/gallery/mobile/gallery-img-2.jpg 418w,
-                ./images/gallery/desktop/gallery-img-2@2x.jpg 540w,
-                ./images/gallery/tablet/gallery-2@2x.jpg 660w,
-                ./images/gallery/mobile/gallery-img-2@2x.jpg 836w"
-               src="./images/gallery/mobile/gallery-img-2.jp"
-               sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px,  100vw"
-                alt="barber shaves a man"
-                
-              />              
-            </li>
-
-            <li class="galery__item card-set__item card-set__item--4" >
-              <img
-                class="img"
-                
-                srcset="./images/gallery/desktop/gallery-img-3.jpg 270w,
-                ./images/gallery/tablet/gallery-3.jpg 330w,
-                ./images/gallery/mobile/gallery-img-3.jpg 418w,
-                ./images/gallery/desktop/gallery-img-3@2x.jpg 540w,
-                ./images/gallery/tablet/gallery-3@2x.jpg 660w,
-                ./images/gallery/mobile/gallery-img-3@2x.jpg 836w"
-               src="./images/gallery/mobile/gallery-img-3.jp"
-               sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px,  100vw"
-                alt="barber wipes man's face with a towel"
-               
-              />
-            </li>
-            
-            <li class="galery__item card-set__item card-set__item--4" >
-              <img
-                class="img"
-                
-                srcset="./images/gallery/desktop/gallery-img-4.jpg 270w,
-                ./images/gallery/tablet/gallery-4.jpg 330w,
-                ./images/gallery/mobile/gallery-img-4.jpg 418w,
-                ./images/gallery/desktop/gallery-img-4@2x.jpg 540w,
-                ./images/gallery/tablet/gallery-4@2x.jpg 660w,
-                ./images/gallery/mobile/gallery-img-4@2x.jpg 836w"
-               src="./images/gallery/mobile/gallery-img-4.jp"
-               sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px,  100vw"
-                alt="barber cuts a man"
-               
-              />
-            </li>
-
-          </ul>
         </div>
       </section>
 

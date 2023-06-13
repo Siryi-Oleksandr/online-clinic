@@ -718,6 +718,7 @@ body {
 
 .section-hero {
   margin: 0 auto;
+  margin-bottom: 40px;
   background-size: cover;
   background-position: center;
 }
@@ -951,10 +952,10 @@ body {
 }
 
 .uppertitle--dark-theme {
-  color: rgba(157, 164, 189, 0.6);
+  color: #ffffff;
 }
 .uppertitle--dark-theme::before {
-  background-color: rgba(157, 164, 189, 0.6);
+  background-color: #ffffff;
 }
 
 .uppertitle--white {
@@ -983,7 +984,7 @@ body {
 }
 
 .subtitle--dark-theme {
-  color: #9da4bd;
+  color: #ffffff;
 }
 
 .subtitle_benefits {
@@ -1141,6 +1142,18 @@ body {
   .about__add-word {
     display: none;
   }
+}
+
+.about__img {
+  height: 450px;
+  width: 270px;
+}
+.about__img > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section-title {
@@ -1612,6 +1625,10 @@ body {
   letter-spacing: 0.02em;
 }
 
+.specialists {
+  margin-left: 80px;
+}
+
 @media screen and (min-width: 768px) {
   .card-set {
     display: -webkit-box;
@@ -1661,6 +1678,15 @@ body {
           box-shadow: -2px 1px 24px 6px rgba(157, 164, 189, 0.75), rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
+.section-vidget {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .galery__item {
   border-radius: 20px;
   overflow: hidden;

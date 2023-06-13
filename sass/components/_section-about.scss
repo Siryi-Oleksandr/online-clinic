@@ -75,3 +75,16 @@
     display: none;
   }
 }
+
+.about__img {
+  height: 450px;
+  width: 270px;
+
+  & > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+  }
+}
